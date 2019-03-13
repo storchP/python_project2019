@@ -1,2 +1,3 @@
-pyinstaller foover.py --onefile --noconsole
-�r���h���ꂽexe�t�@�C����dist�Ɋi�[�����B
+ビルド環境はpython2.7でpip install pyinstaller, pip install wxpythonした後
+pyinstaller foover.py --onefile --noconsole を実行して差し上げろ（迫真）
+ビルドされたexeファイルはdistに格納される。
