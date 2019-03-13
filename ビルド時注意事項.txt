@@ -1,0 +1,2 @@
+pyinstaller foover.py --onefile --noconsole
+ビルドされたexeファイルはdistに格納される。
