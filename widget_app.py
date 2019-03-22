@@ -1,14 +1,21 @@
 # coding: UTF-8
 
-# Servant2.1 original
+# Servant2.2 web_trigerl
 # develop by storchP all rights reserved
 
 import wx
 import os
 import webbrowser
 import sys
+import urllib
+import json
 
-
+# JSON読み込み
+url = 'https://httpbin.org/json'
+readObj = urllib.urlopen(url)
+response = readObj.read()
+# テスト用に書き出し
+print(response)
 
 sys.stdout = open(os.devnull, "w")
 
