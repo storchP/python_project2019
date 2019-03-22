@@ -1,7 +1,7 @@
 # coding: UTF-8
 
-# NoblesServant1.0
-# develop by Apologems all rights reserved
+# Servant2.1 original
+# develop by storchP all rights reserved
 
 import wx
 import os
