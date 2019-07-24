@@ -106,23 +106,23 @@ class Main(wx.Frame):
 
         button_5 = wx.Button(panel, wx.ID_ANY, 'Angel-cup\n\rMMD杯ZERO2予告', size=(90, 90))
         button_6 = wx.Button(panel, wx.ID_ANY, 'Angel-cup\n\rMMD杯ZERO2本番', size=(90, 90))
-        button_7 = wx.Button(panel, wx.ID_ANY, '【MZ2:アクション】', size=(90, 90))
-        button_8 = wx.Button(panel, wx.ID_ANY, '【MZ2:ドラマ】', size=(90, 90))
+        button_7 = wx.Button(panel, wx.ID_ANY, 'MZ2:アクション', size=(90, 90))
+        button_8 = wx.Button(panel, wx.ID_ANY, 'MZ2:ドラマ', size=(90, 90))
+        button_9 = wx.Button(panel, wx.ID_ANY, 'MZ2:ギャグ', size=(90, 90))
 
-        button_9 = wx.Button(panel, wx.ID_ANY, '【MZ2:ギャグ】', size=(90, 90))
-        button_10 = wx.Button(panel, wx.ID_ANY, '【MZ2:ミュージックビデオ】', size=(90, 90))
-        button_11 = wx.Button(panel, wx.ID_ANY, '【MZ2:その他】', size=(90, 90))
-        button_12 = wx.Button(panel, wx.ID_ANY, '【MZ2予:アクション】', size=(90, 90))
+        button_10 = wx.Button(panel, wx.ID_ANY, 'MZ2\n\rミュージックビデオ', size=(90, 90))
+        button_11 = wx.Button(panel, wx.ID_ANY, 'MZ2:その他', size=(90, 90))
+        button_12 = wx.Button(panel, wx.ID_ANY, 'MZ2予:アクション', size=(90, 90))
+        button_13 = wx.Button(panel, wx.ID_ANY, 'MZ2予:ドラマ', size=(90, 90))
+        button_14 = wx.Button(panel, wx.ID_ANY, 'MZ2予:ギャグ', size=(90, 90))
 
-        button_13 = wx.Button(panel, wx.ID_ANY, '【MZ2予:ドラマ】', size=(90, 90))
-        button_14 = wx.Button(panel, wx.ID_ANY, '【MZ2予:ギャグ】', size=(90, 90))
-        button_15 = wx.Button(panel, wx.ID_ANY, '【MZ2予:ミュージックビデオ】', size=(90, 90))
-        button_A = wx.Button(panel, wx.ID_ANY, '【MZ2予:その他】', size=(90, 90))
+        button_15 = wx.Button(panel, wx.ID_ANY, 'MZ2予\n\rミュージックビデオ', size=(90, 90))
+        button_A = wx.Button(panel, wx.ID_ANY, 'MZ2予:その他', size=(90, 90))
 
 
 
         # fontカラー
-        font = wx.Font(11.5, wx.FONTFAMILY_DEFAULT, wx.FONTSTYLE_NORMAL, wx.FONTWEIGHT_NORMAL,  False, "メイリオ")
+        font = wx.Font(11, wx.FONTFAMILY_DEFAULT, wx.FONTSTYLE_NORMAL, wx.FONTWEIGHT_NORMAL,  False, "メイリオ")
         button_1.SetFont(font)
         button_2.SetFont(font)
         button_3.SetFont(font)
