@@ -21,18 +21,18 @@ url_4 ="https://www.nicovideo.jp/mylist/66007802"
 
 url_5 ="http://angel-cup.ch2.cc/mz02_yo/"
 url_6 ="http://angel-cup.ch2.cc/mz02/"
-url_7 ="https://www.nicovideo.jp/tag/【MZ2:アクション】"
-url_8 ="https://www.nicovideo.jp/tag/【MZ2:ドラマ】"
+url_7 ="https://www.nicovideo.jp/tag/%E3%80%90MZ2%3A%E3%82%A2%E3%82%AF%E3%82%B7%E3%83%A7%E3%83%B3%E3%80%91"
+url_8 ="https://www.nicovideo.jp/tag/%E3%80%90MZ2%3A%E3%83%89%E3%83%A9%E3%83%9E%E3%80%91"
 
-url_9 ="https://www.nicovideo.jp/tag/【MZ2:ギャグ】"
-url_10 ="https://www.nicovideo.jp/tag/【MZ2:ミュージックビデオ】"
-url_11 ="https://www.nicovideo.jp/tag/【MZ2:その他】"
-url_12 ="https://www.nicovideo.jp/tag/【MZ2予:アクション】"
+url_9 ="https://www.nicovideo.jp/tag/%E3%80%90MZ2%3A%E3%82%AE%E3%83%A3%E3%82%B0%E3%80%91"
+url_10 ="https://www.nicovideo.jp/tag/%E3%80%90MZ2%3A%E3%83%9F%E3%83%A5%E3%83%BC%E3%82%B8%E3%83%83%E3%82%AF%E3%83%93%E3%83%87%E3%82%AA%E3%80%91"
+url_11 ="https://www.nicovideo.jp/tag/%E3%80%90MZ2%3A%E3%81%9D%E3%81%AE%E4%BB%96%E3%80%91"
+url_12 ="https://www.nicovideo.jp/tag/%E3%80%90MZ2%E4%BA%88%3A%E3%82%A2%E3%82%AF%E3%82%B7%E3%83%A7%E3%83%B3%E3%80%91"
 
-url_13 ="https://www.nicovideo.jp/tag/【MZ2予:ドラマ】"
-url_14 ="https://www.nicovideo.jp/tag/【MZ2予:ギャグ】"
-url_15 ="https://www.nicovideo.jp/tag/【MZ2予:ミュージックビデオ】"
-url_A ="https://www.nicovideo.jp/tag/【MZ2予:その他】"
+url_13 ="https://www.nicovideo.jp/tag/%E3%80%90MZ2%E4%BA%88%3A%E3%83%89%E3%83%A9%E3%83%9E%E3%80%91"
+url_14 ="https://www.nicovideo.jp/tag/%E3%80%90MZ2%E4%BA%88%3A%E3%82%AE%E3%83%A3%E3%82%B0%E3%80%91"
+url_15 ="https://www.nicovideo.jp/tag/%E3%80%90MZ2%E4%BA%88%3A%E3%83%9F%E3%83%A5%E3%83%BC%E3%82%B8%E3%83%83%E3%82%AF%E3%83%93%E3%83%87%E3%82%AA%E3%80%91"
+url_A ="https://www.nicovideo.jp/tag/%E3%80%90MZ2%E4%BA%88%3A%E3%81%9D%E3%81%AE%E4%BB%96%E3%80%91"
 
 
 
