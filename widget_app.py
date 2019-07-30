@@ -90,11 +90,11 @@ def click_button_A(event):
 class Main(wx.Frame):
     def __init__(self, parent, id, title):
         # TITLE
-        title = "MikuMikuWidget for MMD-CUP ZERO2"
+        title = "MikuMikuWidget for MMD-CUP ZERO2　AudienceEdition"
         message="\n\r\n\rMikuMikuWidget\n\rfor MMD-CUP ZERO2"
 
         # パネル設定
-        wx.Frame.__init__(self, parent, id, title, size=(890, 760), pos=(500, 50))
+        wx.Frame.__init__(self, parent, id, title, size=(480, 500), pos=(500, 50))
         panel = wx.Panel(self, wx.ID_ANY)
         panel.SetBackgroundColour('#2b2b2b')
 
