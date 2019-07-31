@@ -22,18 +22,18 @@ url_4 ="https://www.nicovideo.jp/mylist/66007802"
 
 url_5 ="http://angel-cup.ch2.cc/mz02_yo/"
 url_6 ="http://angel-cup.ch2.cc/mz02/"
-url_7 ="https://www.nicovideo.jp/tag/%E3%80%90MZ2%3A%E3%82%A2%E3%82%AF%E3%82%B7%E3%83%A7%E3%83%B3%E3%80%91"
-url_8 ="https://www.nicovideo.jp/tag/%E3%80%90MZ2%3A%E3%83%89%E3%83%A9%E3%83%9E%E3%80%91"
+url_7 ="https://www.nicovideo.jp/tag/%E3%80%90MZ2%3A%E3%82%A2%E3%82%AF%E3%82%B7%E3%83%A7%E3%83%B3%E3%80%91?sort=f&order=d"
+url_8 ="https://www.nicovideo.jp/tag/%E3%80%90MZ2%3A%E3%83%89%E3%83%A9%E3%83%9E%E3%80%91?sort=f&order=d"
 
-url_9 ="https://www.nicovideo.jp/tag/%E3%80%90MZ2%3A%E3%82%AE%E3%83%A3%E3%82%B0%E3%80%91"
-url_10 ="https://www.nicovideo.jp/tag/%E3%80%90MZ2%3A%E3%83%9F%E3%83%A5%E3%83%BC%E3%82%B8%E3%83%83%E3%82%AF%E3%83%93%E3%83%87%E3%82%AA%E3%80%91"
-url_11 ="https://www.nicovideo.jp/tag/%E3%80%90MZ2%3A%E3%81%9D%E3%81%AE%E4%BB%96%E3%80%91"
-url_12 ="https://www.nicovideo.jp/tag/%E3%80%90MZ2%E4%BA%88%3A%E3%82%A2%E3%82%AF%E3%82%B7%E3%83%A7%E3%83%B3%E3%80%91"
+url_9 ="https://www.nicovideo.jp/tag/%E3%80%90MZ2%3A%E3%82%AE%E3%83%A3%E3%82%B0%E3%80%91?sort=f&order=d"
+url_10 ="https://www.nicovideo.jp/tag/%E3%80%90MZ2%3A%E3%83%9F%E3%83%A5%E3%83%BC%E3%82%B8%E3%83%83%E3%82%AF%E3%83%93%E3%83%87%E3%82%AA%E3%80%91?sort=f&order=d"
+url_11 ="https://www.nicovideo.jp/tag/%E3%80%90MZ2%3A%E3%81%9D%E3%81%AE%E4%BB%96%E3%80%91?sort=f&order=d"
+url_12 ="https://www.nicovideo.jp/tag/%E3%80%90MZ2%E4%BA%88%3A%E3%82%A2%E3%82%AF%E3%82%B7%E3%83%A7%E3%83%B3%E3%80%91?sort=f&order=d"
 
-url_13 ="https://www.nicovideo.jp/tag/%E3%80%90MZ2%E4%BA%88%3A%E3%83%89%E3%83%A9%E3%83%9E%E3%80%91"
-url_14 ="https://www.nicovideo.jp/tag/%E3%80%90MZ2%E4%BA%88%3A%E3%82%AE%E3%83%A3%E3%82%B0%E3%80%91"
-url_15 ="https://www.nicovideo.jp/tag/%E3%80%90MZ2%E4%BA%88%3A%E3%83%9F%E3%83%A5%E3%83%BC%E3%82%B8%E3%83%83%E3%82%AF%E3%83%93%E3%83%87%E3%82%AA%E3%80%91"
-url_A ="https://www.nicovideo.jp/tag/%E3%80%90MZ2%E4%BA%88%3A%E3%81%9D%E3%81%AE%E4%BB%96%E3%80%91"
+url_13 ="https://www.nicovideo.jp/tag/%E3%80%90MZ2%E4%BA%88%3A%E3%83%89%E3%83%A9%E3%83%9E%E3%80%91?sort=f&order=d"
+url_14 ="https://www.nicovideo.jp/tag/%E3%80%90MZ2%E4%BA%88%3A%E3%82%AE%E3%83%A3%E3%82%B0%E3%80%91?sort=f&order=d"
+url_15 ="https://www.nicovideo.jp/tag/%E3%80%90MZ2%E4%BA%88%3A%E3%83%9F%E3%83%A5%E3%83%BC%E3%82%B8%E3%83%83%E3%82%AF%E3%83%93%E3%83%87%E3%82%AA%E3%80%91?sort=f&order=d"
+url_A ="https://www.nicovideo.jp/tag/%E3%80%90MZ2%E4%BA%88%3A%E3%81%9D%E3%81%AE%E4%BB%96%E3%80%91?sort=f&order=d"
 
 
 
@@ -91,13 +91,20 @@ def click_button_A(event):
 class Main(wx.Frame):
     def __init__(self, parent, id, title):
         # TITLE
-        title = "MikuMikuWidget for MMD-CUP ZERO2　AudienceEdition"
+        title = "MikuMikuWidget for MMD-CUP ZERO2　[Audience Edition]"
         message="\n\r\n\rMikuMikuWidget\n\rfor MMD-CUP ZERO2"
 
         # パネル設定
         wx.Frame.__init__(self, parent, id, title, size=(580, 600), pos=(500, 50))
         panel = wx.Panel(self, wx.ID_ANY)
-        panel.SetBackgroundColour('#2b2b2b')
+        # 背景色
+        panel.SetBackgroundColour('#2b6a6b')
+
+        # 文字色
+        font_color = '#a1b3b3'
+
+        # ボタン色
+        button_color = '#2f4f4f'
 
         # ボタン設定
         button_1 = wx.Button(panel, wx.ID_ANY, 'ビームマンPの\n\rブロ☆マガ\r\nMMD杯ZERO2告知', size=(100, 100),  style=wx.BORDER_NONE)
@@ -122,7 +129,7 @@ class Main(wx.Frame):
 
 
 
-        # fontカラー
+        # fontスタイル
         font = wx.Font(10, wx.FONTFAMILY_DEFAULT, wx.FONTSTYLE_NORMAL, wx.FONTWEIGHT_NORMAL,  False, "メイリオ")
         button_1.SetFont(font)
         button_2.SetFont(font)
@@ -142,40 +149,40 @@ class Main(wx.Frame):
         button_A.SetFont(font)
 
         # ボタンカラー
-        button_1.SetBackgroundColour('#3c3f41')
-        button_2.SetBackgroundColour('#3c3f41')
-        button_3.SetBackgroundColour('#3c3f41')
-        button_4.SetBackgroundColour('#3c3f41')
-        button_5.SetBackgroundColour('#3c3f41')
-        button_6.SetBackgroundColour('#3c3f41')
-        button_7.SetBackgroundColour('#3c3f41')
-        button_8.SetBackgroundColour('#3c3f41')
-        button_9.SetBackgroundColour('#3c3f41')
-        button_10.SetBackgroundColour('#3c3f41')
-        button_11.SetBackgroundColour('#3c3f41')
-        button_12.SetBackgroundColour('#3c3f41')
-        button_13.SetBackgroundColour('#3c3f41')
-        button_14.SetBackgroundColour('#3c3f41')
-        button_15.SetBackgroundColour('#3c3f41')
-        button_A.SetBackgroundColour('#3c3f41')
+        button_1.SetBackgroundColour(button_color)
+        button_2.SetBackgroundColour(button_color)
+        button_3.SetBackgroundColour(button_color)
+        button_4.SetBackgroundColour(button_color)
+        button_5.SetBackgroundColour(button_color)
+        button_6.SetBackgroundColour(button_color)
+        button_7.SetBackgroundColour(button_color)
+        button_8.SetBackgroundColour(button_color)
+        button_9.SetBackgroundColour(button_color)
+        button_10.SetBackgroundColour(button_color)
+        button_11.SetBackgroundColour(button_color)
+        button_12.SetBackgroundColour(button_color)
+        button_13.SetBackgroundColour(button_color)
+        button_14.SetBackgroundColour(button_color)
+        button_15.SetBackgroundColour(button_color)
+        button_A.SetBackgroundColour(button_color)
 
         # ボタン文字色
-        button_1.SetForegroundColour('#a9b7c6')
-        button_2.SetForegroundColour('#a9b7c6')
-        button_3.SetForegroundColour('#a9b7c6')
-        button_4.SetForegroundColour('#a9b7c6')
-        button_5.SetForegroundColour('#a9b7c6')
-        button_6.SetForegroundColour('#a9b7c6')
-        button_7.SetForegroundColour('#a9b7c6')
-        button_8.SetForegroundColour('#a9b7c6')
-        button_9.SetForegroundColour('#a9b7c6')
-        button_10.SetForegroundColour('#a9b7c6')
-        button_11.SetForegroundColour('#a9b7c6')
-        button_12.SetForegroundColour('#a9b7c6')
-        button_13.SetForegroundColour('#a9b7c6')
-        button_14.SetForegroundColour('#a9b7c6')
-        button_15.SetForegroundColour('#a9b7c6')
-        button_A.SetForegroundColour('#a9b7c6')
+        button_1.SetForegroundColour(font_color)
+        button_2.SetForegroundColour(font_color)
+        button_3.SetForegroundColour(font_color)
+        button_4.SetForegroundColour(font_color)
+        button_5.SetForegroundColour(font_color)
+        button_6.SetForegroundColour(font_color)
+        button_7.SetForegroundColour(font_color)
+        button_8.SetForegroundColour(font_color)
+        button_9.SetForegroundColour(font_color)
+        button_10.SetForegroundColour(font_color)
+        button_11.SetForegroundColour(font_color)
+        button_12.SetForegroundColour(font_color)
+        button_13.SetForegroundColour(font_color)
+        button_14.SetForegroundColour(font_color)
+        button_15.SetForegroundColour(font_color)
+        button_A.SetForegroundColour(font_color)
 
         # ボタンクリック時のバインド
         button_1.Bind(wx.EVT_LEFT_DOWN, click_button_1)
