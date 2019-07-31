@@ -1,6 +1,7 @@
 # coding: UTF-8
 
 # MikuMikuWidget For MMD-CUP-ZERO2
+# project name OpenWidget
 # develop by storchP
 
 import wx
@@ -94,35 +95,35 @@ class Main(wx.Frame):
         message="\n\r\n\rMikuMikuWidget\n\rfor MMD-CUP ZERO2"
 
         # パネル設定
-        wx.Frame.__init__(self, parent, id, title, size=(480, 500), pos=(500, 50))
+        wx.Frame.__init__(self, parent, id, title, size=(580, 600), pos=(500, 50))
         panel = wx.Panel(self, wx.ID_ANY)
         panel.SetBackgroundColour('#2b2b2b')
 
         # ボタン設定
-        button_1 = wx.Button(panel, wx.ID_ANY, 'ビームマンPの\n\rブロ☆マガ\r\nMMD杯ZERO2告知', size=(90, 90),  style=wx.BORDER_NONE)
-        button_2 = wx.Button(panel, wx.ID_ANY, 'MMD杯ZERO2\n\r進行動画マイリスト', size=(90, 90), style=wx.BORDER_NONE)
-        button_3 = wx.Button(panel, wx.ID_ANY, 'MMD杯ZERO2\n\r予告動画マイリスト', size=(90, 90), style=wx.BORDER_NONE)
-        button_4 = wx.Button(panel, wx.ID_ANY, 'MMD杯ZERO2\n\r参加動画マイリスト', size=(90, 90), style=wx.BORDER_NONE)
+        button_1 = wx.Button(panel, wx.ID_ANY, 'ビームマンPの\n\rブロ☆マガ\r\nMMD杯ZERO2告知', size=(100, 100),  style=wx.BORDER_NONE)
+        button_2 = wx.Button(panel, wx.ID_ANY, 'MMD杯ZERO2\n\r進行動画マイリスト', size=(100, 100), style=wx.BORDER_NONE)
+        button_3 = wx.Button(panel, wx.ID_ANY, 'MMD杯ZERO2\n\r予告動画マイリスト', size=(100, 100), style=wx.BORDER_NONE)
+        button_4 = wx.Button(panel, wx.ID_ANY, 'MMD杯ZERO2\n\r参加動画マイリスト', size=(100, 100), style=wx.BORDER_NONE)
 
-        button_5 = wx.Button(panel, wx.ID_ANY, 'Angel-cup\n\rMMD杯ZERO2予告', size=(90, 90) ,  style=wx.BORDER_NONE)
-        button_6 = wx.Button(panel, wx.ID_ANY, 'Angel-cup\n\rMMD杯ZERO2本番', size=(90, 90) ,  style=wx.BORDER_NONE)
-        button_7 = wx.Button(panel, wx.ID_ANY, 'MZ2:アクション', size=(90, 90),  style=wx.BORDER_NONE)
-        button_8 = wx.Button(panel, wx.ID_ANY, 'MZ2:ドラマ', size=(90, 90),  style=wx.BORDER_NONE)
-        button_9 = wx.Button(panel, wx.ID_ANY, 'MZ2:ギャグ', size=(90, 90),  style=wx.BORDER_NONE)
+        button_5 = wx.Button(panel, wx.ID_ANY, 'Angel-cup\n\rMMD杯ZERO2予告', size=(100, 100) ,  style=wx.BORDER_NONE)
+        button_6 = wx.Button(panel, wx.ID_ANY, 'Angel-cup\n\rMMD杯ZERO2本番', size=(100, 100) ,  style=wx.BORDER_NONE)
+        button_7 = wx.Button(panel, wx.ID_ANY, 'MZ2:アクション', size=(100, 100),  style=wx.BORDER_NONE)
+        button_8 = wx.Button(panel, wx.ID_ANY, 'MZ2:ドラマ', size=(100, 100),  style=wx.BORDER_NONE)
 
-        button_10 = wx.Button(panel, wx.ID_ANY, 'MZ2\n\rミュージックビデオ', size=(90, 90),  style=wx.BORDER_NONE)
-        button_11 = wx.Button(panel, wx.ID_ANY, 'MZ2:その他', size=(90, 90),  style=wx.BORDER_NONE)
-        button_12 = wx.Button(panel, wx.ID_ANY, 'MZ2予:アクション', size=(90, 90),  style=wx.BORDER_NONE)
-        button_13 = wx.Button(panel, wx.ID_ANY, 'MZ2予:ドラマ', size=(90, 90),  style=wx.BORDER_NONE)
-        button_14 = wx.Button(panel, wx.ID_ANY, 'MZ2予:ギャグ', size=(90, 90),  style=wx.BORDER_NONE)
+        button_9 = wx.Button(panel, wx.ID_ANY, 'MZ2:ギャグ', size=(100, 100),  style=wx.BORDER_NONE)
+        button_10 = wx.Button(panel, wx.ID_ANY, 'MZ2\n\rミュージックビデオ', size=(100, 100),  style=wx.BORDER_NONE)
+        button_11 = wx.Button(panel, wx.ID_ANY, 'MZ2:その他', size=(100, 100),  style=wx.BORDER_NONE)
+        button_12 = wx.Button(panel, wx.ID_ANY, 'MZ2予:アクション', size=(100, 100),  style=wx.BORDER_NONE)
 
-        button_15 = wx.Button(panel, wx.ID_ANY, 'MZ2予\n\rミュージックビデオ', size=(90, 90),  style=wx.BORDER_NONE)
-        button_A = wx.Button(panel, wx.ID_ANY, 'MZ2予:その他', size=(90, 90),  style=wx.BORDER_NONE)
+        button_13 = wx.Button(panel, wx.ID_ANY, 'MZ2予:ドラマ', size=(100, 100),  style=wx.BORDER_NONE)
+        button_14 = wx.Button(panel, wx.ID_ANY, 'MZ2予:ギャグ', size=(100, 100),  style=wx.BORDER_NONE)
+        button_15 = wx.Button(panel, wx.ID_ANY, 'MZ2予\n\rミュージックビデオ', size=(100, 100),  style=wx.BORDER_NONE)
+        button_A = wx.Button(panel, wx.ID_ANY, 'MZ2予:その他', size=(100, 100),  style=wx.BORDER_NONE)
 
 
 
         # fontカラー
-        font = wx.Font(11, wx.FONTFAMILY_DEFAULT, wx.FONTSTYLE_NORMAL, wx.FONTWEIGHT_NORMAL,  False, "メイリオ")
+        font = wx.Font(10, wx.FONTFAMILY_DEFAULT, wx.FONTSTYLE_NORMAL, wx.FONTWEIGHT_NORMAL,  False, "メイリオ")
         button_1.SetFont(font)
         button_2.SetFont(font)
         button_3.SetFont(font)
