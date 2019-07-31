@@ -94,7 +94,7 @@ class Main(wx.Frame):
     def __init__(self, parent, id, title):
         # TITLE
         title = "MikuMikuWidget for MMD-CUP ZERO2　[Audience Edition]"
-        message="\n\r\n\rMikuMikuWidget\n\rfor MMD-CUP ZERO2"
+        message="\n\r\n\r MikuMikuWidget\n\r for MMD-CUP ZERO\n\r [Audience Edition]"
 
         # パネル設定
         wx.Frame.__init__(self, parent, id, title, size=(510, 655), pos=(500, 50))
@@ -107,6 +107,8 @@ class Main(wx.Frame):
 
         # ボタン色
         button_color = '#2f4f4f'
+
+
 
         # ボタン設定
         button_1 = wx.Button(panel, wx.ID_ANY, 'ビームマンPの\n\rブロ☆マガ\r\nMMD杯ZERO2告知', size=(110, 110),  style=wx.BORDER_NONE)
@@ -127,6 +129,7 @@ class Main(wx.Frame):
         button_16 = wx.Button(panel, wx.ID_ANY, 'MZ2予:その他', size=(110, 110),  style=wx.BORDER_NONE)
         button_17 = wx.Button(panel, wx.ID_ANY, 'MMD杯ZERO2\n\r参加動画', size=(110, 110),  style=wx.BORDER_NONE)
         button_18 = wx.Button(panel, wx.ID_ANY, 'TweetDeck', size=(110, 110),  style=wx.BORDER_NONE)
+        text = wx.StaticText(panel, -1, message)
 
         # fontスタイル
         font = wx.Font(10, wx.FONTFAMILY_DEFAULT, wx.FONTSTYLE_NORMAL, wx.FONTWEIGHT_NORMAL,  False, "メイリオ")
@@ -148,7 +151,7 @@ class Main(wx.Frame):
         button_16.SetFont(font)
         button_17.SetFont(font)
         button_18.SetFont(font)
-        
+        text.SetFont(font)
         # ボタンカラー
         button_1.SetBackgroundColour(button_color)
         button_2.SetBackgroundColour(button_color)
@@ -188,7 +191,7 @@ class Main(wx.Frame):
         button_16.SetForegroundColour(font_color)
         button_17.SetForegroundColour(font_color)
         button_18.SetForegroundColour(font_color)
-
+        text.SetForegroundColour(font_color)
         # ボタンクリック時のバインド
         button_1.Bind(wx.EVT_LEFT_DOWN, click_button_1)
         button_2.Bind(wx.EVT_LEFT_DOWN, click_button_2)
@@ -219,7 +222,6 @@ class Main(wx.Frame):
         layout.Add(button_4, flag=wx.SHAPED)
         layout.Add(button_5, flag=wx.SHAPED)
         layout.Add(button_6, flag=wx.SHAPED)
-
         layout.Add(button_17, flag=wx.SHAPED)
         layout.Add(button_18, flag=wx.SHAPED)
         layout.Add(button_12, flag=wx.SHAPED)
@@ -232,13 +234,14 @@ class Main(wx.Frame):
         layout.Add(button_9, flag=wx.SHAPED)
         layout.Add(button_10, flag=wx.SHAPED)
         layout.Add(button_11, flag=wx.SHAPED)
+        layout.Add(text)
         panel.SetSizer(layout)
         self.Show(True)
 
 # 画面表示
 def main():
     app = wx.App()
-    Main(None, wx.ID_ANY, "hoge")
+    Main(None, wx.ID_ANY, "")
     app.MainLoop()
 if __name__ == "__main__":
     main()
