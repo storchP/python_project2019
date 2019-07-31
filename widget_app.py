@@ -34,8 +34,26 @@ url_13 ="https://www.nicovideo.jp/tag/%E3%80%90MZ2%E4%BA%88%3A%E3%83%89%E3%83%A9
 url_14 ="https://www.nicovideo.jp/tag/%E3%80%90MZ2%E4%BA%88%3A%E3%82%AE%E3%83%A3%E3%82%B0%E3%80%91?sort=f&order=d"
 url_15 ="https://www.nicovideo.jp/tag/%E3%80%90MZ2%E4%BA%88%3A%E3%83%9F%E3%83%A5%E3%83%BC%E3%82%B8%E3%83%83%E3%82%AF%E3%83%93%E3%83%87%E3%82%AA%E3%80%91?sort=f&order=d"
 url_A ="https://www.nicovideo.jp/tag/%E3%80%90MZ2%E4%BA%88%3A%E3%81%9D%E3%81%AE%E4%BB%96%E3%80%91?sort=f&order=d"
+url_B ="https://bowlroll.net/"
+url_C ="https://bowlroll.net/"
+url_D ="https://bowlroll.net/"
+url_E ="https://bowlroll.net/"
+url_F ="https://bowlroll.net/"
+url_G ="https://bowlroll.net/"
+url_H ="https://bowlroll.net/"
+url_I ="https://bowlroll.net/"
+url_J ="https://bowlroll.net/"
+url_K ="https://bowlroll.net/"
 
+url_L ="https://bowlroll.net/"
+url_M ="https://bowlroll.net/"
+url_N ="https://bowlroll.net/"
+url_O ="https://bowlroll.net/"
 
+url_P ="https://bowlroll.net/"
+url_Q ="https://bowlroll.net/"
+url_R ="https://bowlroll.net/"
+url_S ="https://bowlroll.net/"
 
 # URL展開
 def click_button_1(event):
@@ -86,6 +104,59 @@ def click_button_15(event):
 def click_button_A(event):
     webbrowser.open(url_A)
 
+def click_button_B(event):
+    webbrowser.open(url_B)
+
+def click_button_C(event):
+    webbrowser.open(url_C)
+
+def click_button_D(event):
+    webbrowser.open(url_D)
+
+def click_button_E(event):
+    webbrowser.open(url_E)
+
+def click_button_F(event):
+    webbrowser.open(url_F)
+
+def click_button_G(event):
+    webbrowser.open(url_G)
+
+def click_button_H(event):
+    webbrowser.open(url_H)
+
+def click_button_I(event):
+    webbrowser.open(url_I)
+
+def click_button_J(event):
+    webbrowser.open(url_J)
+
+def click_button_K(event):
+    webbrowser.open(url_K)
+
+def click_button_L(event):
+    webbrowser.open(url_L)
+
+def click_button_M(event):
+    webbrowser.open(url_M)
+
+def click_button_N(event):
+    webbrowser.open(url_N)
+
+def click_button_O(event):
+    webbrowser.open(url_O)
+
+def click_button_P(event):
+    webbrowser.open(url_P)
+
+def click_button_Q(event):
+    webbrowser.open(url_Q)
+
+def click_button_R(event):
+    webbrowser.open(url_R)
+
+def click_button_S(event):
+    webbrowser.open(url_S)
 
 # 基礎処理
 class Main(wx.Frame):
@@ -116,18 +187,39 @@ class Main(wx.Frame):
         button_6 = wx.Button(panel, wx.ID_ANY, 'Angel-cup\n\rMMD杯ZERO2本番', size=(100, 100) ,  style=wx.BORDER_NONE)
         button_7 = wx.Button(panel, wx.ID_ANY, 'MZ2:アクション', size=(100, 100),  style=wx.BORDER_NONE)
         button_8 = wx.Button(panel, wx.ID_ANY, 'MZ2:ドラマ', size=(100, 100),  style=wx.BORDER_NONE)
-
         button_9 = wx.Button(panel, wx.ID_ANY, 'MZ2:ギャグ', size=(100, 100),  style=wx.BORDER_NONE)
+
         button_10 = wx.Button(panel, wx.ID_ANY, 'MZ2\n\rミュージックビデオ', size=(100, 100),  style=wx.BORDER_NONE)
         button_11 = wx.Button(panel, wx.ID_ANY, 'MZ2:その他', size=(100, 100),  style=wx.BORDER_NONE)
         button_12 = wx.Button(panel, wx.ID_ANY, 'MZ2予:アクション', size=(100, 100),  style=wx.BORDER_NONE)
-
         button_13 = wx.Button(panel, wx.ID_ANY, 'MZ2予:ドラマ', size=(100, 100),  style=wx.BORDER_NONE)
         button_14 = wx.Button(panel, wx.ID_ANY, 'MZ2予:ギャグ', size=(100, 100),  style=wx.BORDER_NONE)
+
         button_15 = wx.Button(panel, wx.ID_ANY, 'MZ2予\n\rミュージックビデオ', size=(100, 100),  style=wx.BORDER_NONE)
         button_A = wx.Button(panel, wx.ID_ANY, 'MZ2予:その他', size=(100, 100),  style=wx.BORDER_NONE)
 
+        button_B = wx.Button(panel, wx.ID_ANY, 'bowlroll', size=(100, 100), style=wx.BORDER_NONE)
+        button_C = wx.Button(panel, wx.ID_ANY, 'MMDモデル配布あり\n\r(静画)', size=(100, 100), style=wx.BORDER_NONE)
+        button_D = wx.Button(panel, wx.ID_ANY, 'MMDモデル配布あり\n\r(動画)', size=(100, 100), style=wx.BORDER_NONE)
+        button_E = wx.Button(panel, wx.ID_ANY, 'VPVP Wiki', size=(100, 100), style=wx.BORDER_NONE)
+        button_F = wx.Button(panel, wx.ID_ANY, 'ニコニ・コモンズ\n\r素材ライブラリ', size=(100, 100), style=wx.BORDER_NONE)
+        button_G = wx.Button(panel, wx.ID_ANY, 'フリーBGM\n\rDOVA SYNDROME', size=(100, 100), style=wx.BORDER_NONE)
+        button_H = wx.Button(panel, wx.ID_ANY, '効果音ラボ', size=(100, 100), style=wx.BORDER_NONE)
+        button_I = wx.Button(panel, wx.ID_ANY, 'フリー3Dモデルまとめ', size=(100, 100), style=wx.BORDER_NONE)
+        button_J = wx.Button(panel, wx.ID_ANY, 'MMDアクセサリ配布あり\n\r(動画)', size=(100, 100), style=wx.BORDER_NONE)
+        button_K = wx.Button(panel, wx.ID_ANY, 'MMDアクセサリ配布あり\n\r(静画)', size=(100, 100), style=wx.BORDER_NONE)
 
+        button_L = wx.Button(panel, wx.ID_ANY, 'MMDステージ配布あり\n\r(動画)', size=(100, 100), style=wx.BORDER_NONE)
+        button_M = wx.Button(panel, wx.ID_ANY, 'MMDステージ配布あり\n\r(静画)', size=(100, 100), style=wx.BORDER_NONE)
+
+        button_N = wx.Button(panel, wx.ID_ANY, 'MMD衣装配布あり\n\r(動画)', size=(100, 100), style=wx.BORDER_NONE)
+        button_O = wx.Button(panel, wx.ID_ANY, 'MMD衣装配布あり\n\r(静画)', size=(100, 100), style=wx.BORDER_NONE)
+
+        button_P = wx.Button(panel, wx.ID_ANY, 'MMEデータ配布あり\n\r(動画)', size=(100, 100), style=wx.BORDER_NONE)
+        button_Q = wx.Button(panel, wx.ID_ANY, 'MMEデータ配布あり\n\r(静画)', size=(100, 100), style=wx.BORDER_NONE)
+
+        button_R = wx.Button(panel, wx.ID_ANY, 'MMDツール配布あり\n\r(動画)', size=(100, 100), style=wx.BORDER_NONE)
+        button_S = wx.Button(panel, wx.ID_ANY, 'MMDツール配布あり\n\r(静画)', size=(100, 100), style=wx.BORDER_NONE)
 
         # fontスタイル
         font = wx.Font(10, wx.FONTFAMILY_DEFAULT, wx.FONTSTYLE_NORMAL, wx.FONTWEIGHT_NORMAL,  False, "メイリオ")
@@ -147,6 +239,24 @@ class Main(wx.Frame):
         button_14.SetFont(font)
         button_15.SetFont(font)
         button_A.SetFont(font)
+        button_B.SetFont(font)
+        button_C.SetFont(font)
+        button_D.SetFont(font)
+        button_E.SetFont(font)
+        button_F.SetFont(font)
+        button_G.SetFont(font)
+        button_H.SetFont(font)
+        button_I.SetFont(font)
+        button_J.SetFont(font)
+        button_K.SetFont(font)
+        button_L.SetFont(font)
+        button_M.SetFont(font)
+        button_N.SetFont(font)
+        button_O.SetFont(font)
+        button_P.SetFont(font)
+        button_Q.SetFont(font)
+        button_R.SetFont(font)
+        button_S.SetFont(font)
 
         # ボタンカラー
         button_1.SetBackgroundColour(button_color)
@@ -165,6 +275,24 @@ class Main(wx.Frame):
         button_14.SetBackgroundColour(button_color)
         button_15.SetBackgroundColour(button_color)
         button_A.SetBackgroundColour(button_color)
+        button_B.SetBackgroundColour(button_color)
+        button_C.SetBackgroundColour(button_color)
+        button_D.SetBackgroundColour(button_color)
+        button_E.SetBackgroundColour(button_color)
+        button_F.SetBackgroundColour(button_color)
+        button_G.SetBackgroundColour(button_color)
+        button_H.SetBackgroundColour(button_color)
+        button_I.SetBackgroundColour(button_color)
+        button_J.SetBackgroundColour(button_color)
+        button_K.SetBackgroundColour(button_color)
+        button_L.SetBackgroundColour(button_color)
+        button_M.SetBackgroundColour(button_color)
+        button_N.SetBackgroundColour(button_color)
+        button_O.SetBackgroundColour(button_color)
+        button_P.SetBackgroundColour(button_color)
+        button_Q.SetBackgroundColour(button_color)
+        button_R.SetBackgroundColour(button_color)
+        button_S.SetBackgroundColour(button_color)
 
         # ボタン文字色
         button_1.SetForegroundColour(font_color)
@@ -183,6 +311,27 @@ class Main(wx.Frame):
         button_14.SetForegroundColour(font_color)
         button_15.SetForegroundColour(font_color)
         button_A.SetForegroundColour(font_color)
+        button_B.SetForegroundColour(font_color)
+        button_C.SetForegroundColour(font_color)
+
+        button_D.SetForegroundColour(font_color)
+        button_E.SetForegroundColour(font_color)
+        button_F.SetForegroundColour(font_color)
+        button_G.SetForegroundColour(font_color)
+        button_H.SetForegroundColour(font_color)
+        button_I.SetForegroundColour(font_color)
+        button_J.SetForegroundColour(font_color)
+        button_K.SetForegroundColour(font_color)
+        button_L.SetForegroundColour(font_color)
+        button_M.SetForegroundColour(font_color)
+        button_N.SetForegroundColour(font_color)
+        button_O.SetForegroundColour(font_color)
+        button_P.SetForegroundColour(font_color)
+        button_Q.SetForegroundColour(font_color)
+        button_R.SetForegroundColour(font_color)
+        button_S.SetForegroundColour(font_color)
+
+
 
         # ボタンクリック時のバインド
         button_1.Bind(wx.EVT_LEFT_DOWN, click_button_1)
@@ -202,8 +351,31 @@ class Main(wx.Frame):
         button_15.Bind(wx.EVT_LEFT_DOWN, click_button_15)
         button_A.Bind(wx.EVT_LEFT_DOWN, click_button_A)
 
+        button_B.Bind(wx.EVT_LEFT_DOWN, click_button_B)
+        button_C.Bind(wx.EVT_LEFT_DOWN, click_button_C)
+        button_D.Bind(wx.EVT_LEFT_DOWN, click_button_D)
+
+        button_E.Bind(wx.EVT_LEFT_DOWN, click_button_E)
+        button_F.Bind(wx.EVT_LEFT_DOWN, click_button_F)
+        button_G.Bind(wx.EVT_LEFT_DOWN, click_button_G)
+        button_H.Bind(wx.EVT_LEFT_DOWN, click_button_H)
+        button_I.Bind(wx.EVT_LEFT_DOWN, click_button_I)
+        button_J.Bind(wx.EVT_LEFT_DOWN, click_button_J)
+
+        button_K.Bind(wx.EVT_LEFT_DOWN, click_button_K)
+        button_L.Bind(wx.EVT_LEFT_DOWN, click_button_L)
+
+        button_M.Bind(wx.EVT_LEFT_DOWN, click_button_M)
+
+        button_N.Bind(wx.EVT_LEFT_DOWN, click_button_N)
+        button_O.Bind(wx.EVT_LEFT_DOWN, click_button_O)
+        button_P.Bind(wx.EVT_LEFT_DOWN, click_button_P)
+        button_Q.Bind(wx.EVT_LEFT_DOWN, click_button_Q)
+        button_R.Bind(wx.EVT_LEFT_DOWN, click_button_R)
+        button_S.Bind(wx.EVT_LEFT_DOWN, click_button_S)
+
         # パネルレイアウト
-        layout = wx.GridSizer(rows=4, cols=4, gap=(1, 1))
+        layout = wx.GridSizer(rows=5, cols=5, gap=(1, 1))
 
         # パーツ配置
         layout.Add(button_1, flag=wx.SHAPED)
