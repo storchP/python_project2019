@@ -19,24 +19,20 @@ url_1 ="https://ch.nicovideo.jp/BeamManP/blomaga/ar1668259"
 url_2 ="https://www.nicovideo.jp/mylist/66007798"
 url_3 ="https://www.nicovideo.jp/mylist/66007800"
 url_4 ="https://www.nicovideo.jp/mylist/66007802"
-
 url_5 ="http://angel-cup.ch2.cc/mz02_yo/"
 url_6 ="http://angel-cup.ch2.cc/mz02/"
 url_7 ="https://www.nicovideo.jp/tag/%E3%80%90MZ2%3A%E3%82%A2%E3%82%AF%E3%82%B7%E3%83%A7%E3%83%B3%E3%80%91?sort=f&order=d"
 url_8 ="https://www.nicovideo.jp/tag/%E3%80%90MZ2%3A%E3%83%89%E3%83%A9%E3%83%9E%E3%80%91?sort=f&order=d"
-
 url_9 ="https://www.nicovideo.jp/tag/%E3%80%90MZ2%3A%E3%82%AE%E3%83%A3%E3%82%B0%E3%80%91?sort=f&order=d"
 url_10 ="https://www.nicovideo.jp/tag/%E3%80%90MZ2%3A%E3%83%9F%E3%83%A5%E3%83%BC%E3%82%B8%E3%83%83%E3%82%AF%E3%83%93%E3%83%87%E3%82%AA%E3%80%91?sort=f&order=d"
 url_11 ="https://www.nicovideo.jp/tag/%E3%80%90MZ2%3A%E3%81%9D%E3%81%AE%E4%BB%96%E3%80%91?sort=f&order=d"
 url_12 ="https://www.nicovideo.jp/tag/%E3%80%90MZ2%E4%BA%88%3A%E3%82%A2%E3%82%AF%E3%82%B7%E3%83%A7%E3%83%B3%E3%80%91?sort=f&order=d"
-
 url_13 ="https://www.nicovideo.jp/tag/%E3%80%90MZ2%E4%BA%88%3A%E3%83%89%E3%83%A9%E3%83%9E%E3%80%91?sort=f&order=d"
 url_14 ="https://www.nicovideo.jp/tag/%E3%80%90MZ2%E4%BA%88%3A%E3%82%AE%E3%83%A3%E3%82%B0%E3%80%91?sort=f&order=d"
 url_15 ="https://www.nicovideo.jp/tag/%E3%80%90MZ2%E4%BA%88%3A%E3%83%9F%E3%83%A5%E3%83%BC%E3%82%B8%E3%83%83%E3%82%AF%E3%83%93%E3%83%87%E3%82%AA%E3%80%91?sort=f&order=d"
-url_A ="https://www.nicovideo.jp/tag/%E3%80%90MZ2%E4%BA%88%3A%E3%81%9D%E3%81%AE%E4%BB%96%E3%80%91?sort=f&order=d"
-
-url_B ="https://www.nicovideo.jp/tag/%e3%80%90MMD%e6%9d%afZERO2%e5%8f%82%e5%8a%a0%e5%8b%95%e7%94%bb%e3%80%91?sort=f&order=d"
-
+url_16 ="https://www.nicovideo.jp/tag/%E3%80%90MZ2%E4%BA%88%3A%E3%81%9D%E3%81%AE%E4%BB%96%E3%80%91?sort=f&order=d"
+url_17 ="https://www.nicovideo.jp/tag/%e3%80%90MMD%e6%9d%afZERO2%e5%8f%82%e5%8a%a0%e5%8b%95%e7%94%bb%e3%80%91?sort=f&order=d"
+url_18 ="https://tweetdeck.twitter.com/"
 
 # URL展開
 def click_button_1(event):
@@ -84,10 +80,14 @@ def click_button_14(event):
 def click_button_15(event):
     webbrowser.open(url_15)
 
-def click_button_A(event):
-    webbrowser.open(url_A)
-def click_button_B(event):
-    webbrowser.open(url_B)
+def click_button_16(event):
+    webbrowser.open(url_16)
+
+def click_button_17(event):
+    webbrowser.open(url_17)
+
+def click_button_18(event):
+    webbrowser.open(url_18)
 
 # 基礎処理
 class Main(wx.Frame):
@@ -97,7 +97,7 @@ class Main(wx.Frame):
         message="\n\r\n\rMikuMikuWidget\n\rfor MMD-CUP ZERO2"
 
         # パネル設定
-        wx.Frame.__init__(self, parent, id, title, size=(580, 600), pos=(500, 50))
+        wx.Frame.__init__(self, parent, id, title, size=(510, 655), pos=(500, 50))
         panel = wx.Panel(self, wx.ID_ANY)
         # 背景色
         panel.SetBackgroundColour('#2b6a6b')
@@ -109,27 +109,24 @@ class Main(wx.Frame):
         button_color = '#2f4f4f'
 
         # ボタン設定
-        button_1 = wx.Button(panel, wx.ID_ANY, 'ビームマンPの\n\rブロ☆マガ\r\nMMD杯ZERO2告知', size=(100, 100),  style=wx.BORDER_NONE)
-        button_2 = wx.Button(panel, wx.ID_ANY, 'MMD杯ZERO2\n\r進行動画マイリスト', size=(100, 100), style=wx.BORDER_NONE)
-        button_3 = wx.Button(panel, wx.ID_ANY, 'MMD杯ZERO2\n\r予告動画マイリスト', size=(100, 100), style=wx.BORDER_NONE)
-        button_4 = wx.Button(panel, wx.ID_ANY, 'MMD杯ZERO2\n\r参加動画マイリスト', size=(100, 100), style=wx.BORDER_NONE)
-
-        button_5 = wx.Button(panel, wx.ID_ANY, 'Angel-cup\n\rMMD杯ZERO2予告', size=(100, 100) ,  style=wx.BORDER_NONE)
-        button_6 = wx.Button(panel, wx.ID_ANY, 'Angel-cup\n\rMMD杯ZERO2本番', size=(100, 100) ,  style=wx.BORDER_NONE)
-        button_7 = wx.Button(panel, wx.ID_ANY, 'MZ2:アクション', size=(100, 100),  style=wx.BORDER_NONE)
-        button_8 = wx.Button(panel, wx.ID_ANY, 'MZ2:ドラマ', size=(100, 100),  style=wx.BORDER_NONE)
-
-        button_9 = wx.Button(panel, wx.ID_ANY, 'MZ2:ギャグ', size=(100, 100),  style=wx.BORDER_NONE)
-        button_10 = wx.Button(panel, wx.ID_ANY, 'MZ2\n\rミュージックビデオ', size=(100, 100),  style=wx.BORDER_NONE)
-        button_11 = wx.Button(panel, wx.ID_ANY, 'MZ2:その他', size=(100, 100),  style=wx.BORDER_NONE)
-        button_12 = wx.Button(panel, wx.ID_ANY, 'MZ2予:アクション', size=(100, 100),  style=wx.BORDER_NONE)
-
-        button_13 = wx.Button(panel, wx.ID_ANY, 'MZ2予:ドラマ', size=(100, 100),  style=wx.BORDER_NONE)
-        button_14 = wx.Button(panel, wx.ID_ANY, 'MZ2予:ギャグ', size=(100, 100),  style=wx.BORDER_NONE)
-        button_15 = wx.Button(panel, wx.ID_ANY, 'MZ2予\n\rミュージックビデオ', size=(100, 100),  style=wx.BORDER_NONE)
-        button_A = wx.Button(panel, wx.ID_ANY, 'MZ2予:その他', size=(100, 100),  style=wx.BORDER_NONE)
-
-
+        button_1 = wx.Button(panel, wx.ID_ANY, 'ビームマンPの\n\rブロ☆マガ\r\nMMD杯ZERO2告知', size=(110, 110),  style=wx.BORDER_NONE)
+        button_2 = wx.Button(panel, wx.ID_ANY, 'MMD杯ZERO2\n\r進行動画マイリスト', size=(110, 110), style=wx.BORDER_NONE)
+        button_3 = wx.Button(panel, wx.ID_ANY, 'MMD杯ZERO2\n\r予告動画マイリスト', size=(110, 110), style=wx.BORDER_NONE)
+        button_4 = wx.Button(panel, wx.ID_ANY, 'MMD杯ZERO2\n\r参加動画マイリスト', size=(110, 110), style=wx.BORDER_NONE)
+        button_5 = wx.Button(panel, wx.ID_ANY, 'Angel-cup\n\rMMD杯ZERO2予告', size=(110, 110) ,  style=wx.BORDER_NONE)
+        button_6 = wx.Button(panel, wx.ID_ANY, 'Angel-cup\n\rMMD杯ZERO2本番', size=(110, 110) ,  style=wx.BORDER_NONE)
+        button_7 = wx.Button(panel, wx.ID_ANY, 'MZ2:アクション', size=(110, 110),  style=wx.BORDER_NONE)
+        button_8 = wx.Button(panel, wx.ID_ANY, 'MZ2:ドラマ', size=(110, 110),  style=wx.BORDER_NONE)
+        button_9 = wx.Button(panel, wx.ID_ANY, 'MZ2:ギャグ', size=(110, 110),  style=wx.BORDER_NONE)
+        button_10 = wx.Button(panel, wx.ID_ANY, 'MZ2\n\rミュージックビデオ', size=(110, 110),  style=wx.BORDER_NONE)
+        button_11 = wx.Button(panel, wx.ID_ANY, 'MZ2:その他', size=(110, 110),  style=wx.BORDER_NONE)
+        button_12 = wx.Button(panel, wx.ID_ANY, 'MZ2予:アクション', size=(110, 110),  style=wx.BORDER_NONE)
+        button_13 = wx.Button(panel, wx.ID_ANY, 'MZ2予:ドラマ', size=(110, 110),  style=wx.BORDER_NONE)
+        button_14 = wx.Button(panel, wx.ID_ANY, 'MZ2予:ギャグ', size=(110, 110),  style=wx.BORDER_NONE)
+        button_15 = wx.Button(panel, wx.ID_ANY, 'MZ2予\n\rミュージックビデオ', size=(110, 110),  style=wx.BORDER_NONE)
+        button_16 = wx.Button(panel, wx.ID_ANY, 'MZ2予:その他', size=(110, 110),  style=wx.BORDER_NONE)
+        button_17 = wx.Button(panel, wx.ID_ANY, 'MMD杯ZERO2\n\r参加動画', size=(110, 110),  style=wx.BORDER_NONE)
+        button_18 = wx.Button(panel, wx.ID_ANY, 'TweetDeck', size=(110, 110),  style=wx.BORDER_NONE)
 
         # fontスタイル
         font = wx.Font(10, wx.FONTFAMILY_DEFAULT, wx.FONTSTYLE_NORMAL, wx.FONTWEIGHT_NORMAL,  False, "メイリオ")
@@ -148,8 +145,10 @@ class Main(wx.Frame):
         button_13.SetFont(font)
         button_14.SetFont(font)
         button_15.SetFont(font)
-        button_A.SetFont(font)
-
+        button_16.SetFont(font)
+        button_17.SetFont(font)
+        button_18.SetFont(font)
+        
         # ボタンカラー
         button_1.SetBackgroundColour(button_color)
         button_2.SetBackgroundColour(button_color)
@@ -166,7 +165,9 @@ class Main(wx.Frame):
         button_13.SetBackgroundColour(button_color)
         button_14.SetBackgroundColour(button_color)
         button_15.SetBackgroundColour(button_color)
-        button_A.SetBackgroundColour(button_color)
+        button_16.SetBackgroundColour(button_color)
+        button_17.SetBackgroundColour(button_color)
+        button_18.SetBackgroundColour(button_color)
 
         # ボタン文字色
         button_1.SetForegroundColour(font_color)
@@ -184,7 +185,9 @@ class Main(wx.Frame):
         button_13.SetForegroundColour(font_color)
         button_14.SetForegroundColour(font_color)
         button_15.SetForegroundColour(font_color)
-        button_A.SetForegroundColour(font_color)
+        button_16.SetForegroundColour(font_color)
+        button_17.SetForegroundColour(font_color)
+        button_18.SetForegroundColour(font_color)
 
         # ボタンクリック時のバインド
         button_1.Bind(wx.EVT_LEFT_DOWN, click_button_1)
@@ -202,10 +205,12 @@ class Main(wx.Frame):
         button_13.Bind(wx.EVT_LEFT_DOWN, click_button_13)
         button_14.Bind(wx.EVT_LEFT_DOWN, click_button_14)
         button_15.Bind(wx.EVT_LEFT_DOWN, click_button_15)
-        button_A.Bind(wx.EVT_LEFT_DOWN, click_button_A)
+        button_16.Bind(wx.EVT_LEFT_DOWN, click_button_16)
+        button_17.Bind(wx.EVT_LEFT_DOWN, click_button_17)
+        button_18.Bind(wx.EVT_LEFT_DOWN, click_button_18)
 
         # パネルレイアウト
-        layout = wx.GridSizer(rows=4, cols=4, gap=(1, 1))
+        layout = wx.GridSizer(rows=5, cols=4, gap=(1, 1))
 
         # パーツ配置
         layout.Add(button_1, flag=wx.SHAPED)
@@ -214,16 +219,19 @@ class Main(wx.Frame):
         layout.Add(button_4, flag=wx.SHAPED)
         layout.Add(button_5, flag=wx.SHAPED)
         layout.Add(button_6, flag=wx.SHAPED)
+
+        layout.Add(button_17, flag=wx.SHAPED)
+        layout.Add(button_18, flag=wx.SHAPED)
+        layout.Add(button_12, flag=wx.SHAPED)
+        layout.Add(button_13, flag=wx.SHAPED)
+        layout.Add(button_14, flag=wx.SHAPED)
+        layout.Add(button_15, flag=wx.SHAPED)
+        layout.Add(button_16, flag=wx.SHAPED)
         layout.Add(button_7, flag=wx.SHAPED)
         layout.Add(button_8, flag=wx.SHAPED)
         layout.Add(button_9, flag=wx.SHAPED)
         layout.Add(button_10, flag=wx.SHAPED)
         layout.Add(button_11, flag=wx.SHAPED)
-        layout.Add(button_12, flag=wx.SHAPED)
-        layout.Add(button_13, flag=wx.SHAPED)
-        layout.Add(button_14, flag=wx.SHAPED)
-        layout.Add(button_15, flag=wx.SHAPED)
-        layout.Add(button_A, flag=wx.SHAPED)
         panel.SetSizer(layout)
         self.Show(True)
 
