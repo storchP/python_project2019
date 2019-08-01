@@ -11,6 +11,8 @@ import sys
 
 sys.stdout = open(os.devnull, "w")
 
+# TODO:URL37以降のバインド実装
+
 # URL LIST
 url_1 ="https://ch.nicovideo.jp/BeamManP/blomaga/ar1668259"
 url_2 ="https://www.nicovideo.jp/mylist/66007798"
@@ -32,24 +34,24 @@ url_17 ="https://www.nicovideo.jp/tag/%e3%80%90MMD%e6%9d%afZERO2%e5%8f%82%e5%8a%
 url_18 ="https://tweetdeck.twitter.com/"
 
 url_19 ="https://bowlroll.net/"
-url_20 ="https://bowlroll.net/"
-url_21 ="https://bowlroll.net/"
-url_22 ="https://bowlroll.net/"
-url_23 ="https://bowlroll.net/"
-url_24 ="https://bowlroll.net/"
-url_25 ="https://bowlroll.net/"
-url_26 ="https://bowlroll.net/"
-url_27 ="https://bowlroll.net/"
-url_28 ="https://bowlroll.net/"
-url_29 ="https://bowlroll.net/"
-url_30 ="https://bowlroll.net/"
-url_31 ="https://bowlroll.net/"
-url_32 ="https://bowlroll.net/"
-url_33 ="https://bowlroll.net/"
-url_34 ="https://bowlroll.net/"
-url_35 ="https://bowlroll.net/"
-url_36 ="https://bowlroll.net/"
-
+url_20 ="https://www.nicovideo.jp/tag/MD%e3%83%a2%e3%83%87%e3%83%ab%e9%85%8d%e5%b8%83%e3%81%82%e3%82%8a?sort=f&order=d"
+url_21 ="http://seiga.nicovideo.jp/tag/MMD%e3%83%a2%e3%83%87%e3%83%ab%e9%85%8d%e5%b8%83%e3%81%82%e3%82%8a?sort=image_created"
+url_22 ="https://www6.atwiki.jp/vpvpwiki/"
+url_23 ="http://commons.nicovideo.jp/materials/"
+url_24 ="https://dova-s.jp/"
+url_25 ="https://soundeffect-lab.info/"
+url_26 ="https://storyinvention.com/free-3d-model-matome/"
+url_27 ="https://www.nicovideo.jp/tag/MMD%e3%82%a2%e3%82%af%e3%82%bb%e3%82%b5%e3%83%aa%e9%85%8d%e5%b8%83%e3%81%82%e3%82%8a?ref=tagconcerned"
+url_28 ="https://seiga.nicovideo.jp/tag/MMD%e3%82%a2%e3%82%af%e3%82%bb%e3%82%b5%e3%83%aa%e9%85%8d%e5%b8%83%e3%81%82%e3%82%8a?target=illust"
+url_29 ="https://www.nicovideo.jp/tag/MMD%e3%82%b9%e3%83%86%e3%83%bc%e3%82%b8%e9%85%8d%e5%b8%83%e3%81%82%e3%82%8a?sort=f&order=d"
+url_30 ="https://seiga.nicovideo.jp/tag/MMD%e3%82%b9%e3%83%86%e3%83%bc%e3%82%b8%e9%85%8d%e5%b8%83%e3%81%82%e3%82%8a?sort=image_created"
+url_31 ="https://www.nicovideo.jp/tag/MMD%e8%a1%a3%e8%a3%85%e9%85%8d%e5%b8%83%e3%81%82%e3%82%8a?sort=f&order=d"
+url_32 ="http://seiga.nicovideo.jp/tag/MMD%e8%a1%a3%e8%a3%85%e9%85%8d%e5%b8%83%e3%81%82%e3%82%8a?sort=f&order=d?sort=image_created"
+url_33 ="https://www.nicovideo.jp/tag/MME%e3%83%87%e3%83%bc%e3%82%bf%e9%85%8d%e5%b8%83%e3%81%82%e3%82%8a?sort=f&order=d"
+url_34 ="http://seiga.nicovideo.jp/tag/MME%e3%83%87%e3%83%bc%e3%82%bf%e9%85%8d%e5%b8%83%e3%81%82%e3%82%8a?sort=image_created"
+url_35 ="https://www.nicovideo.jp/tag/MMD%e3%83%84%e3%83%bc%e3%83%ab%e9%85%8d%e5%b8%83%e3%81%82%e3%82%8a?sort=f&order=d"
+url_36 ="http://seiga.nicovideo.jp/tag/MMD%e3%83%84%e3%83%bc%e3%83%ab%e9%85%8d%e5%b8%83%e3%81%82%e3%82%8a?target=illust"
+url_37 ="https://www.nicovideo.jp/tag/MMD%e3%83%a2%e3%83%bc%e3%82%b7%e3%83%a7%e3%83%b3%e9%85%8d%e5%b8%83%e3%81%82%e3%82%8a?sort=f&order=d"
 
 # URL展開
 def click_button_1(event):
@@ -160,6 +162,9 @@ def click_button_35(event):
 def click_button_36(event):
     webbrowser.open(url_36)
 
+def click_button_37(event):
+    webbrowser.open(url_37)
+
 # 基礎処理
 class Main(wx.Frame):
     def __init__(self, parent, id, title):
@@ -214,10 +219,14 @@ class Main(wx.Frame):
         button_30 = wx.Button(panel, wx.ID_ANY, 'MMDステージ\n\r配布あり\n\r(静画)', size=(320, 320), style=wx.BORDER_NONE)
         button_31 = wx.Button(panel, wx.ID_ANY, 'MMD衣装配布あり\n\r(動画)', size=(320, 320), style=wx.BORDER_NONE)
         button_32 = wx.Button(panel, wx.ID_ANY, 'MMD衣装配布あり\n\r(静画)', size=(320, 320), style=wx.BORDER_NONE)
+
         button_33 = wx.Button(panel, wx.ID_ANY, 'MMEデータ配布あり\n\r(動画)', size=(320, 320), style=wx.BORDER_NONE)
         button_34 = wx.Button(panel, wx.ID_ANY, 'MMEデータ配布あり\n\r(静画)', size=(320, 320), style=wx.BORDER_NONE)
         button_35 = wx.Button(panel, wx.ID_ANY, 'MMDツール配布あり\n\r(動画)', size=(320, 320), style=wx.BORDER_NONE)
         button_36 = wx.Button(panel, wx.ID_ANY, 'MMDツール配布あり\n\r(静画)', size=(320, 320), style=wx.BORDER_NONE)
+        button_37 = wx.Button(panel, wx.ID_ANY, 'MMDモーション配布あり\n\r(動画)', size=(320, 320), style=wx.BORDER_NONE)
+
+
         text = wx.StaticText(panel, -1, message)
         
         # fontスタイル
@@ -258,6 +267,8 @@ class Main(wx.Frame):
         button_34.SetFont(font)
         button_35.SetFont(font)
         button_36.SetFont(font)
+        button_37.SetFont(font)
+        button_3.SetFont(font)
         text.SetFont(font)
 
         # ボタンカラー
@@ -298,6 +309,8 @@ class Main(wx.Frame):
         button_34.SetBackgroundColour(button_color)
         button_35.SetBackgroundColour(button_color)
         button_36.SetBackgroundColour(button_color)
+        button_37.SetBackgroundColour(button_color)
+        button_3.SetBackgroundColour(button_color)
 
         # ボタン文字色
         button_1.SetForegroundColour(font_color)
@@ -336,7 +349,7 @@ class Main(wx.Frame):
         button_34.SetForegroundColour(font_color)
         button_35.SetForegroundColour(font_color)
         button_36.SetForegroundColour(font_color)
-
+        button_37.SetForegroundColour(font_color)
         text.SetForegroundColour(font_color)
 
         # ボタンクリック時のバインド
@@ -376,6 +389,7 @@ class Main(wx.Frame):
         button_34.Bind(wx.EVT_LEFT_DOWN, click_button_34)
         button_35.Bind(wx.EVT_LEFT_DOWN, click_button_35)
         button_36.Bind(wx.EVT_LEFT_DOWN, click_button_36)
+        button_37.Bind(wx.EVT_LEFT_DOWN, click_button_37)
 
         # パネルレイアウト
         layout = wx.GridSizer(rows=7, cols=6, gap=(1, 1))
@@ -402,6 +416,7 @@ class Main(wx.Frame):
         layout.Add(button_19, flag=wx.SHAPED)
         layout.Add(button_20, flag=wx.SHAPED)
         layout.Add(button_21, flag=wx.SHAPED)
+        layout.Add(button_37, flag=wx.SHAPED)
         layout.Add(button_22, flag=wx.SHAPED)
         layout.Add(button_23, flag=wx.SHAPED)
         layout.Add(button_24, flag=wx.SHAPED)
