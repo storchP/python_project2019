@@ -14,163 +14,201 @@ sys.stdout = open(os.devnull, "w")
 # TODO:URL37以降のバインド実装
 
 # URL LIST
-url_1 ="https://ch.nicovideo.jp/BeamManP/blomaga/ar1668259"
-url_2 ="https://www.nicovideo.jp/mylist/66007798"
-url_3 ="https://www.nicovideo.jp/mylist/66007800"
-url_4 ="https://www.nicovideo.jp/mylist/66007802"
-url_5 ="http://angel-cup.ch2.cc/mz02_yo/"
-url_6 ="http://angel-cup.ch2.cc/mz02/"
-url_7 ="https://www.nicovideo.jp/tag/%E3%80%90MZ2%3A%E3%82%A2%E3%82%AF%E3%82%B7%E3%83%A7%E3%83%B3%E3%80%91?sort=f&order=d"
-url_8 ="https://www.nicovideo.jp/tag/%E3%80%90MZ2%3A%E3%83%89%E3%83%A9%E3%83%9E%E3%80%91?sort=f&order=d"
-url_9 ="https://www.nicovideo.jp/tag/%E3%80%90MZ2%3A%E3%82%AE%E3%83%A3%E3%82%B0%E3%80%91?sort=f&order=d"
-url_10 ="https://www.nicovideo.jp/tag/%E3%80%90MZ2%3A%E3%83%9F%E3%83%A5%E3%83%BC%E3%82%B8%E3%83%83%E3%82%AF%E3%83%93%E3%83%87%E3%82%AA%E3%80%91?sort=f&order=d"
-url_11 ="https://www.nicovideo.jp/tag/%E3%80%90MZ2%3A%E3%81%9D%E3%81%AE%E4%BB%96%E3%80%91?sort=f&order=d"
-url_12 ="https://www.nicovideo.jp/tag/%E3%80%90MZ2%E4%BA%88%3A%E3%82%A2%E3%82%AF%E3%82%B7%E3%83%A7%E3%83%B3%E3%80%91?sort=f&order=d"
-url_13 ="https://www.nicovideo.jp/tag/%E3%80%90MZ2%E4%BA%88%3A%E3%83%89%E3%83%A9%E3%83%9E%E3%80%91?sort=f&order=d"
-url_14 ="https://www.nicovideo.jp/tag/%E3%80%90MZ2%E4%BA%88%3A%E3%82%AE%E3%83%A3%E3%82%B0%E3%80%91?sort=f&order=d"
-url_15 ="https://www.nicovideo.jp/tag/%E3%80%90MZ2%E4%BA%88%3A%E3%83%9F%E3%83%A5%E3%83%BC%E3%82%B8%E3%83%83%E3%82%AF%E3%83%93%E3%83%87%E3%82%AA%E3%80%91?sort=f&order=d"
-url_16 ="https://www.nicovideo.jp/tag/%E3%80%90MZ2%E4%BA%88%3A%E3%81%9D%E3%81%AE%E4%BB%96%E3%80%91?sort=f&order=d"
-url_17 ="https://www.nicovideo.jp/tag/%e3%80%90MMD%e6%9d%afZERO2%e5%8f%82%e5%8a%a0%e5%8b%95%e7%94%bb%e3%80%91?sort=f&order=d"
-url_18 ="https://tweetdeck.twitter.com/"
+url_1 = "https://ch.nicovideo.jp/BeamManP/blomaga/ar1668259"
+url_2 = "https://www.nicovideo.jp/mylist/66007798"
+url_3 = "https://www.nicovideo.jp/mylist/66007800"
+url_4 = "https://www.nicovideo.jp/mylist/66007802"
+url_5 = "http://angel-cup.ch2.cc/mz02_yo/"
+url_6 = "http://angel-cup.ch2.cc/mz02/"
+url_7 = "https://www.nicovideo.jp/tag/%E3%80%90MZ2%3A%E3%82%A2%E3%82%AF%E3%82%B7%E3%83%A7%E3%83%B3%E3%80%91?sort=f&order=d"
+url_8 = "https://www.nicovideo.jp/tag/%E3%80%90MZ2%3A%E3%83%89%E3%83%A9%E3%83%9E%E3%80%91?sort=f&order=d"
+url_9 = "https://www.nicovideo.jp/tag/%E3%80%90MZ2%3A%E3%82%AE%E3%83%A3%E3%82%B0%E3%80%91?sort=f&order=d"
+url_10 = "https://www.nicovideo.jp/tag/%E3%80%90MZ2%3A%E3%83%9F%E3%83%A5%E3%83%BC%E3%82%B8%E3%83%83%E3%82%AF%E3%83%93%E3%83%87%E3%82%AA%E3%80%91?sort=f&order=d"
+url_11 = "https://www.nicovideo.jp/tag/%E3%80%90MZ2%3A%E3%81%9D%E3%81%AE%E4%BB%96%E3%80%91?sort=f&order=d"
+url_12 = "https://www.nicovideo.jp/tag/%E3%80%90MZ2%E4%BA%88%3A%E3%82%A2%E3%82%AF%E3%82%B7%E3%83%A7%E3%83%B3%E3%80%91?sort=f&order=d"
+url_13 = "https://www.nicovideo.jp/tag/%E3%80%90MZ2%E4%BA%88%3A%E3%83%89%E3%83%A9%E3%83%9E%E3%80%91?sort=f&order=d"
+url_14 = "https://www.nicovideo.jp/tag/%E3%80%90MZ2%E4%BA%88%3A%E3%82%AE%E3%83%A3%E3%82%B0%E3%80%91?sort=f&order=d"
+url_15 = "https://www.nicovideo.jp/tag/%E3%80%90MZ2%E4%BA%88%3A%E3%83%9F%E3%83%A5%E3%83%BC%E3%82%B8%E3%83%83%E3%82%AF%E3%83%93%E3%83%87%E3%82%AA%E3%80%91?sort=f&order=d"
+url_16 = "https://www.nicovideo.jp/tag/%E3%80%90MZ2%E4%BA%88%3A%E3%81%9D%E3%81%AE%E4%BB%96%E3%80%91?sort=f&order=d"
+url_17 = "https://www.nicovideo.jp/tag/%e3%80%90MMD%e6%9d%afZERO2%e5%8f%82%e5%8a%a0%e5%8b%95%e7%94%bb%e3%80%91?sort=f&order=d"
+url_18 = "https://tweetdeck.twitter.com/"
 
-url_19 ="https://bowlroll.net/"
-url_20 ="https://www.nicovideo.jp/tag/MD%e3%83%a2%e3%83%87%e3%83%ab%e9%85%8d%e5%b8%83%e3%81%82%e3%82%8a?sort=f&order=d"
-url_21 ="http://seiga.nicovideo.jp/tag/MMD%e3%83%a2%e3%83%87%e3%83%ab%e9%85%8d%e5%b8%83%e3%81%82%e3%82%8a?sort=image_created"
-url_22 ="https://www6.atwiki.jp/vpvpwiki/"
-url_23 ="http://commons.nicovideo.jp/materials/"
-url_24 ="https://dova-s.jp/"
-url_25 ="https://soundeffect-lab.info/"
-url_26 ="https://storyinvention.com/free-3d-model-matome/"
-url_27 ="https://www.nicovideo.jp/tag/MMD%e3%82%a2%e3%82%af%e3%82%bb%e3%82%b5%e3%83%aa%e9%85%8d%e5%b8%83%e3%81%82%e3%82%8a?ref=tagconcerned"
-url_28 ="https://seiga.nicovideo.jp/tag/MMD%e3%82%a2%e3%82%af%e3%82%bb%e3%82%b5%e3%83%aa%e9%85%8d%e5%b8%83%e3%81%82%e3%82%8a?target=illust"
-url_29 ="https://www.nicovideo.jp/tag/MMD%e3%82%b9%e3%83%86%e3%83%bc%e3%82%b8%e9%85%8d%e5%b8%83%e3%81%82%e3%82%8a?sort=f&order=d"
-url_30 ="https://seiga.nicovideo.jp/tag/MMD%e3%82%b9%e3%83%86%e3%83%bc%e3%82%b8%e9%85%8d%e5%b8%83%e3%81%82%e3%82%8a?sort=image_created"
-url_31 ="https://www.nicovideo.jp/tag/MMD%e8%a1%a3%e8%a3%85%e9%85%8d%e5%b8%83%e3%81%82%e3%82%8a?sort=f&order=d"
-url_32 ="http://seiga.nicovideo.jp/tag/MMD%e8%a1%a3%e8%a3%85%e9%85%8d%e5%b8%83%e3%81%82%e3%82%8a?sort=f&order=d?sort=image_created"
-url_33 ="https://www.nicovideo.jp/tag/MME%e3%83%87%e3%83%bc%e3%82%bf%e9%85%8d%e5%b8%83%e3%81%82%e3%82%8a?sort=f&order=d"
-url_34 ="http://seiga.nicovideo.jp/tag/MME%e3%83%87%e3%83%bc%e3%82%bf%e9%85%8d%e5%b8%83%e3%81%82%e3%82%8a?sort=image_created"
-url_35 ="https://www.nicovideo.jp/tag/MMD%e3%83%84%e3%83%bc%e3%83%ab%e9%85%8d%e5%b8%83%e3%81%82%e3%82%8a?sort=f&order=d"
-url_36 ="http://seiga.nicovideo.jp/tag/MMD%e3%83%84%e3%83%bc%e3%83%ab%e9%85%8d%e5%b8%83%e3%81%82%e3%82%8a?target=illust"
-url_37 ="https://www.nicovideo.jp/tag/MMD%e3%83%a2%e3%83%bc%e3%82%b7%e3%83%a7%e3%83%b3%e9%85%8d%e5%b8%83%e3%81%82%e3%82%8a?sort=f&order=d"
+url_19 = "https://bowlroll.net/"
+url_20 = "https://www.nicovideo.jp/tag/MMD%e3%83%a2%e3%83%87%e3%83%ab%e9%85%8d%e5%b8%83%e3%81%82%e3%82%8a?sort=f&order=d"
+url_21 = "http://seiga.nicovideo.jp/tag/MMD%e3%83%a2%e3%83%87%e3%83%ab%e9%85%8d%e5%b8%83%e3%81%82%e3%82%8a?sort=image_created"
+url_22 = "https://www6.atwiki.jp/vpvpwiki/"
+url_23 = "http://commons.nicovideo.jp/materials/"
+url_24 = "https://dova-s.jp/"
+url_25 = "https://soundeffect-lab.info/"
+url_26 = "https://storyinvention.com/free-3d-model-matome/"
+url_27 = "https://www.nicovideo.jp/tag/MMD%e3%82%a2%e3%82%af%e3%82%bb%e3%82%b5%e3%83%aa%e9%85%8d%e5%b8%83%e3%81%82%e3%82%8a?ref=tagconcerned"
+url_28 = "https://seiga.nicovideo.jp/tag/MMD%e3%82%a2%e3%82%af%e3%82%bb%e3%82%b5%e3%83%aa%e9%85%8d%e5%b8%83%e3%81%82%e3%82%8a?target=illust"
+url_29 = "https://www.nicovideo.jp/tag/MMD%e3%82%b9%e3%83%86%e3%83%bc%e3%82%b8%e9%85%8d%e5%b8%83%e3%81%82%e3%82%8a?sort=f&order=d"
+url_30 = "https://seiga.nicovideo.jp/tag/MMD%e3%82%b9%e3%83%86%e3%83%bc%e3%82%b8%e9%85%8d%e5%b8%83%e3%81%82%e3%82%8a?sort=image_created"
+url_31 = "https://www.nicovideo.jp/tag/MMD%e8%a1%a3%e8%a3%85%e9%85%8d%e5%b8%83%e3%81%82%e3%82%8a?sort=f&order=d"
+url_32 = "http://seiga.nicovideo.jp/tag/MMD%e8%a1%a3%e8%a3%85%e9%85%8d%e5%b8%83%e3%81%82%e3%82%8a?sort=f&order=d?sort=image_created"
+url_33 = "https://www.nicovideo.jp/tag/MME%e3%83%87%e3%83%bc%e3%82%bf%e9%85%8d%e5%b8%83%e3%81%82%e3%82%8a?sort=f&order=d"
+url_34 = "http://seiga.nicovideo.jp/tag/MME%e3%83%87%e3%83%bc%e3%82%bf%e9%85%8d%e5%b8%83%e3%81%82%e3%82%8a?sort=image_created"
+url_35 = "https://www.nicovideo.jp/tag/MMD%e3%83%84%e3%83%bc%e3%83%ab%e9%85%8d%e5%b8%83%e3%81%82%e3%82%8a?sort=f&order=d"
+url_36 = "http://seiga.nicovideo.jp/tag/MMD%e3%83%84%e3%83%bc%e3%83%ab%e9%85%8d%e5%b8%83%e3%81%82%e3%82%8a?target=illust"
+url_37 = "https://www.nicovideo.jp/tag/MMD%e3%83%a2%e3%83%bc%e3%82%b7%e3%83%a7%e3%83%b3%e9%85%8d%e5%b8%83%e3%81%82%e3%82%8a?sort=f&order=d"
+
 
 # URL展開
 def click_button_1(event):
     webbrowser.open(url_1)
 
+
 def click_button_2(event):
     webbrowser.open(url_2)
+
 
 def click_button_3(event):
     webbrowser.open(url_3)
 
+
 def click_button_4(event):
     webbrowser.open(url_4)
+
 
 def click_button_5(event):
     webbrowser.open(url_5)
 
+
 def click_button_6(event):
     webbrowser.open(url_6)
+
 
 def click_button_7(event):
     webbrowser.open(url_7)
 
+
 def click_button_8(event):
     webbrowser.open(url_8)
+
 
 def click_button_9(event):
     webbrowser.open(url_9)
 
+
 def click_button_10(event):
     webbrowser.open(url_10)
+
 
 def click_button_11(event):
     webbrowser.open(url_11)
 
+
 def click_button_12(event):
     webbrowser.open(url_12)
+
 
 def click_button_13(event):
     webbrowser.open(url_13)
 
+
 def click_button_14(event):
     webbrowser.open(url_14)
+
 
 def click_button_15(event):
     webbrowser.open(url_15)
 
+
 def click_button_16(event):
     webbrowser.open(url_16)
+
 
 def click_button_17(event):
     webbrowser.open(url_17)
 
+
 def click_button_18(event):
     webbrowser.open(url_18)
+
 
 def click_button_19(event):
     webbrowser.open(url_19)
 
+
 def click_button_20(event):
     webbrowser.open(url_20)
+
 
 def click_button_21(event):
     webbrowser.open(url_21)
 
-def click_button_22(event):
-    webbrowser.open(url_21)
 
-def click_button_23(event):
+def click_button_22(event):
     webbrowser.open(url_22)
 
-def click_button_24(event):
+
+def click_button_23(event):
     webbrowser.open(url_23)
 
-def click_button_25(event):
+
+def click_button_24(event):
     webbrowser.open(url_24)
 
-def click_button_26(event):
+
+def click_button_25(event):
     webbrowser.open(url_25)
+
+
+def click_button_26(event):
+    webbrowser.open(url_26)
+
 
 def click_button_27(event):
     webbrowser.open(url_27)
 
+
 def click_button_28(event):
     webbrowser.open(url_28)
+
 
 def click_button_29(event):
     webbrowser.open(url_29)
 
+
 def click_button_30(event):
     webbrowser.open(url_30)
+
 
 def click_button_31(event):
     webbrowser.open(url_31)
 
+
 def click_button_32(event):
     webbrowser.open(url_32)
+
 
 def click_button_33(event):
     webbrowser.open(url_33)
 
+
 def click_button_34(event):
     webbrowser.open(url_34)
+
 
 def click_button_35(event):
     webbrowser.open(url_35)
 
+
 def click_button_36(event):
     webbrowser.open(url_36)
 
+
 def click_button_37(event):
     webbrowser.open(url_37)
+
 
 # 基礎処理
 class Main(wx.Frame):
     def __init__(self, parent, id, title):
         # TITLE
         title = "MikuMikuWidget for MMD-CUP ZERO2　[Contributor Edition]"
-        message="\n\r\n\r MikuMikuWidget\n\r for MMD-CUP ZERO\n\r [Contributor Edition]"
+        message = "\n\r\n\r MikuMikuWidget\n\r for MMD-CUP ZERO\n\r [Contributor Edition]"
 
         # パネル設定
         wx.Frame.__init__(self, parent, id, title, size=(800, 950), pos=(500, 50))
@@ -184,7 +222,7 @@ class Main(wx.Frame):
         # ボタン色
         button_color = '#2f4f4f'
 
-# TODO:AEPプロジェクト、AVIUTLスクリプト配布、PhotoshopVIPへのアクセスを追加
+        # TODO:AEPプロジェクト、AVIUTLスクリプト配布、PhotoshopVIPへのアクセスを追加
 
         # ボタン設定
         button_1 = wx.Button(panel, wx.ID_ANY, 'ビームマンPの\n\rブロ☆マガ\r\nMMD杯ZERO2告知', size=(320, 320), style=wx.BORDER_NONE)
@@ -206,8 +244,8 @@ class Main(wx.Frame):
         button_17 = wx.Button(panel, wx.ID_ANY, 'MMD杯ZERO2\n\r参加動画', size=(320, 320), style=wx.BORDER_NONE)
         button_18 = wx.Button(panel, wx.ID_ANY, 'TweetDeck', size=(320, 320), style=wx.BORDER_NONE)
         button_19 = wx.Button(panel, wx.ID_ANY, 'bowlroll', size=(320, 320), style=wx.BORDER_NONE)
-        button_20 = wx.Button(panel, wx.ID_ANY, 'MMDモデル配布あり\n\r(静画)', size=(320, 320), style=wx.BORDER_NONE)
-        button_21 = wx.Button(panel, wx.ID_ANY, 'MMDモデル配布あり\n\r(動画)', size=(320, 320), style=wx.BORDER_NONE)
+        button_20 = wx.Button(panel, wx.ID_ANY, 'MMDモデル配布あり\n\r(動画)', size=(320, 320), style=wx.BORDER_NONE)
+        button_21 = wx.Button(panel, wx.ID_ANY, 'MMDモデル配布あり\n\r(静画)', size=(320, 320), style=wx.BORDER_NONE)
         button_22 = wx.Button(panel, wx.ID_ANY, 'VPVP Wiki', size=(320, 320), style=wx.BORDER_NONE)
         button_23 = wx.Button(panel, wx.ID_ANY, 'ニコニ・コモンズ\n\r素材ライブラリ', size=(320, 320), style=wx.BORDER_NONE)
         button_24 = wx.Button(panel, wx.ID_ANY, 'フリーBGM\n\rDOVA SYNDROME', size=(320, 320), style=wx.BORDER_NONE)
@@ -224,13 +262,12 @@ class Main(wx.Frame):
         button_34 = wx.Button(panel, wx.ID_ANY, 'MMEデータ配布あり\n\r(静画)', size=(320, 320), style=wx.BORDER_NONE)
         button_35 = wx.Button(panel, wx.ID_ANY, 'MMDツール配布あり\n\r(動画)', size=(320, 320), style=wx.BORDER_NONE)
         button_36 = wx.Button(panel, wx.ID_ANY, 'MMDツール配布あり\n\r(静画)', size=(320, 320), style=wx.BORDER_NONE)
-        button_37 = wx.Button(panel, wx.ID_ANY, 'MMDモーション配布あり\n\r(動画)', size=(320, 320), style=wx.BORDER_NONE)
-
+        button_37 = wx.Button(panel, wx.ID_ANY, 'MMDモーション\n\r配布あり', size=(320, 320), style=wx.BORDER_NONE)
 
         text = wx.StaticText(panel, -1, message)
-        
+
         # fontスタイル
-        font = wx.Font(10, wx.FONTFAMILY_DEFAULT, wx.FONTSTYLE_NORMAL, wx.FONTWEIGHT_NORMAL,  False, "メイリオ")
+        font = wx.Font(10, wx.FONTFAMILY_DEFAULT, wx.FONTSTYLE_NORMAL, wx.FONTWEIGHT_NORMAL, False, "メイリオ")
         button_1.SetFont(font)
         button_2.SetFont(font)
         button_3.SetFont(font)
@@ -436,10 +473,13 @@ class Main(wx.Frame):
         panel.SetSizer(layout)
         self.Show(True)
 
+
 # 画面表示
 def main():
     app = wx.App()
     Main(None, wx.ID_ANY, "")
     app.MainLoop()
+
+
 if __name__ == "__main__":
     main()
