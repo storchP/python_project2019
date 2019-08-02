@@ -1,6 +1,6 @@
 # coding: UTF-8
 
-# MikuMikuWidget For MMD-CUP-ZERO2
+# MikuMikuWidget For MMD-CUP-ZERO2 [Contributor Edition]
 # project name OpenWidget
 # develop by storchP
 
@@ -53,165 +53,145 @@ url_35 = "https://www.nicovideo.jp/tag/MMD%e3%83%84%e3%83%bc%e3%83%ab%e9%85%8d%e
 url_36 = "http://seiga.nicovideo.jp/tag/MMD%e3%83%84%e3%83%bc%e3%83%ab%e9%85%8d%e5%b8%83%e3%81%82%e3%82%8a?target=illust"
 url_37 = "https://www.nicovideo.jp/tag/MMD%e3%83%a2%e3%83%bc%e3%82%b7%e3%83%a7%e3%83%b3%e9%85%8d%e5%b8%83%e3%81%82%e3%82%8a?sort=f&order=d"
 
+#TODO AVIUTLスクリプト講座 　AviUtlプロジェクトファイル配布動画　 フォトショップVIP AEP　Project
+url_38 ="https://www.nicovideo.jp/tag/AviUtl%e3%82%b9%e3%82%af%e3%83%aa%e3%83%97%e3%83%88%e8%ac%9b%e5%ba%a7?sort=f&order=d"
+url_39 ="https://www.nicovideo.jp/tag/AviUtl%e3%83%97%e3%83%ad%e3%82%b8%e3%82%a7%e3%82%af%e3%83%88%e3%83%95%e3%82%a1%e3%82%a4%e3%83%ab%e9%85%8d%e5%b8%83%e5%8b%95%e7%94%bb?sort=f&order=d"
+url_40 ="http://photoshopvip.net/"
+url_41 ="http://ae-users.com/jp/"
 
 # URL展開
 def click_button_1(event):
     webbrowser.open(url_1)
 
-
 def click_button_2(event):
     webbrowser.open(url_2)
-
 
 def click_button_3(event):
     webbrowser.open(url_3)
 
-
 def click_button_4(event):
     webbrowser.open(url_4)
-
 
 def click_button_5(event):
     webbrowser.open(url_5)
 
-
 def click_button_6(event):
     webbrowser.open(url_6)
-
 
 def click_button_7(event):
     webbrowser.open(url_7)
 
-
 def click_button_8(event):
     webbrowser.open(url_8)
-
 
 def click_button_9(event):
     webbrowser.open(url_9)
 
-
 def click_button_10(event):
     webbrowser.open(url_10)
-
 
 def click_button_11(event):
     webbrowser.open(url_11)
 
-
 def click_button_12(event):
     webbrowser.open(url_12)
-
 
 def click_button_13(event):
     webbrowser.open(url_13)
 
-
 def click_button_14(event):
     webbrowser.open(url_14)
-
 
 def click_button_15(event):
     webbrowser.open(url_15)
 
-
 def click_button_16(event):
     webbrowser.open(url_16)
-
 
 def click_button_17(event):
     webbrowser.open(url_17)
 
-
 def click_button_18(event):
     webbrowser.open(url_18)
-
 
 def click_button_19(event):
     webbrowser.open(url_19)
 
-
 def click_button_20(event):
     webbrowser.open(url_20)
-
 
 def click_button_21(event):
     webbrowser.open(url_21)
 
-
 def click_button_22(event):
     webbrowser.open(url_22)
-
 
 def click_button_23(event):
     webbrowser.open(url_23)
 
-
 def click_button_24(event):
     webbrowser.open(url_24)
-
 
 def click_button_25(event):
     webbrowser.open(url_25)
 
-
 def click_button_26(event):
     webbrowser.open(url_26)
-
 
 def click_button_27(event):
     webbrowser.open(url_27)
 
-
 def click_button_28(event):
     webbrowser.open(url_28)
-
 
 def click_button_29(event):
     webbrowser.open(url_29)
 
-
 def click_button_30(event):
     webbrowser.open(url_30)
-
 
 def click_button_31(event):
     webbrowser.open(url_31)
 
-
 def click_button_32(event):
     webbrowser.open(url_32)
-
 
 def click_button_33(event):
     webbrowser.open(url_33)
 
-
 def click_button_34(event):
     webbrowser.open(url_34)
-
 
 def click_button_35(event):
     webbrowser.open(url_35)
 
-
 def click_button_36(event):
     webbrowser.open(url_36)
-
 
 def click_button_37(event):
     webbrowser.open(url_37)
 
+def click_button_38(event):
+    webbrowser.open(url_38)
+
+def click_button_39(event):
+    webbrowser.open(url_39)
+
+def click_button_40(event):
+    webbrowser.open(url_40)
+
+def click_button_41(event):
+    webbrowser.open(url_41)
 
 # 基礎処理
 class Main(wx.Frame):
     def __init__(self, parent, id, title):
         # TITLE
         title = "MikuMikuWidget for MMD-CUP ZERO2　[Contributor Edition]"
-        message = "\n\r\n\r MikuMikuWidget\n\r for MMD-CUP ZERO\n\r [Contributor Edition]"
+        message = "\n\r\n\rMikuMikuWidget\n\rfor MMD-CUP ZERO\n\r[Contributor Edition]"
 
         # パネル設定
-        wx.Frame.__init__(self, parent, id, title, size=(800, 950), pos=(500, 50))
+        wx.Frame.__init__(self, parent, id, title, size=(750, 890), pos=(500, 40))
         panel = wx.Panel(self, wx.ID_ANY)
         # 背景色
         panel.SetBackgroundColour('#2b6a6b')
@@ -250,19 +230,22 @@ class Main(wx.Frame):
         button_23 = wx.Button(panel, wx.ID_ANY, 'ニコニ・コモンズ\n\r素材ライブラリ', size=(320, 320), style=wx.BORDER_NONE)
         button_24 = wx.Button(panel, wx.ID_ANY, 'フリーBGM\n\rDOVA SYNDROME', size=(320, 320), style=wx.BORDER_NONE)
         button_25 = wx.Button(panel, wx.ID_ANY, '効果音ラボ', size=(320, 320), style=wx.BORDER_NONE)
-        button_26 = wx.Button(panel, wx.ID_ANY, 'フリー3D\n\rモデルまとめ', size=(320, 320), style=wx.BORDER_NONE)
+        button_26 = wx.Button(panel, wx.ID_ANY, 'フリー3D\n\rモデルまとめ\n\r(MOMIZIZM)', size=(320, 320), style=wx.BORDER_NONE)
         button_27 = wx.Button(panel, wx.ID_ANY, 'MMDアクセサリ\n\r配布あり\n\r(動画)', size=(320, 320), style=wx.BORDER_NONE)
         button_28 = wx.Button(panel, wx.ID_ANY, 'MMDアクセサリ\n\r配布あり\n\r(静画)', size=(320, 320), style=wx.BORDER_NONE)
         button_29 = wx.Button(panel, wx.ID_ANY, 'MMDステージ\n\r配布あり\n\r(動画)', size=(320, 320), style=wx.BORDER_NONE)
         button_30 = wx.Button(panel, wx.ID_ANY, 'MMDステージ\n\r配布あり\n\r(静画)', size=(320, 320), style=wx.BORDER_NONE)
         button_31 = wx.Button(panel, wx.ID_ANY, 'MMD衣装配布あり\n\r(動画)', size=(320, 320), style=wx.BORDER_NONE)
         button_32 = wx.Button(panel, wx.ID_ANY, 'MMD衣装配布あり\n\r(静画)', size=(320, 320), style=wx.BORDER_NONE)
-
         button_33 = wx.Button(panel, wx.ID_ANY, 'MMEデータ配布あり\n\r(動画)', size=(320, 320), style=wx.BORDER_NONE)
         button_34 = wx.Button(panel, wx.ID_ANY, 'MMEデータ配布あり\n\r(静画)', size=(320, 320), style=wx.BORDER_NONE)
         button_35 = wx.Button(panel, wx.ID_ANY, 'MMDツール配布あり\n\r(動画)', size=(320, 320), style=wx.BORDER_NONE)
         button_36 = wx.Button(panel, wx.ID_ANY, 'MMDツール配布あり\n\r(静画)', size=(320, 320), style=wx.BORDER_NONE)
         button_37 = wx.Button(panel, wx.ID_ANY, 'MMDモーション\n\r配布あり', size=(320, 320), style=wx.BORDER_NONE)
+        button_38 = wx.Button(panel, wx.ID_ANY, 'AviUtl\n\rスクリプト講座', size=(320, 320), style=wx.BORDER_NONE)
+        button_39 = wx.Button(panel, wx.ID_ANY, 'AviUtl\n\rプロジェクトファイル\n\r配布動画', size=(320, 320), style=wx.BORDER_NONE)
+        button_40 = wx.Button(panel, wx.ID_ANY, '静止画素材情報\n\rPHOTOSHOP VIP', size=(320, 320), style=wx.BORDER_NONE)
+        button_41 = wx.Button(panel, wx.ID_ANY, 'AE tips集\n\rAEP Project', size=(320, 320), style=wx.BORDER_NONE)
 
         text = wx.StaticText(panel, -1, message)
 
@@ -305,7 +288,10 @@ class Main(wx.Frame):
         button_35.SetFont(font)
         button_36.SetFont(font)
         button_37.SetFont(font)
-        button_3.SetFont(font)
+        button_38.SetFont(font)
+        button_39.SetFont(font)
+        button_40.SetFont(font)
+        button_41.SetFont(font)
         text.SetFont(font)
 
         # ボタンカラー
@@ -347,7 +333,10 @@ class Main(wx.Frame):
         button_35.SetBackgroundColour(button_color)
         button_36.SetBackgroundColour(button_color)
         button_37.SetBackgroundColour(button_color)
-        button_3.SetBackgroundColour(button_color)
+        button_38.SetBackgroundColour(button_color)
+        button_39.SetBackgroundColour(button_color)
+        button_40.SetBackgroundColour(button_color)
+        button_41.SetBackgroundColour(button_color)
 
         # ボタン文字色
         button_1.SetForegroundColour(font_color)
@@ -387,6 +376,10 @@ class Main(wx.Frame):
         button_35.SetForegroundColour(font_color)
         button_36.SetForegroundColour(font_color)
         button_37.SetForegroundColour(font_color)
+        button_38.SetForegroundColour(font_color)
+        button_39.SetForegroundColour(font_color)
+        button_40.SetForegroundColour(font_color)
+        button_41.SetForegroundColour(font_color)
         text.SetForegroundColour(font_color)
 
         # ボタンクリック時のバインド
@@ -427,7 +420,10 @@ class Main(wx.Frame):
         button_35.Bind(wx.EVT_LEFT_DOWN, click_button_35)
         button_36.Bind(wx.EVT_LEFT_DOWN, click_button_36)
         button_37.Bind(wx.EVT_LEFT_DOWN, click_button_37)
-
+        button_38.Bind(wx.EVT_LEFT_DOWN, click_button_38)
+        button_39.Bind(wx.EVT_LEFT_DOWN, click_button_39)
+        button_40.Bind(wx.EVT_LEFT_DOWN, click_button_40)
+        button_41.Bind(wx.EVT_LEFT_DOWN, click_button_41)
         # パネルレイアウト
         layout = wx.GridSizer(rows=7, cols=6, gap=(1, 1))
 
@@ -453,7 +449,6 @@ class Main(wx.Frame):
         layout.Add(button_19, flag=wx.SHAPED)
         layout.Add(button_20, flag=wx.SHAPED)
         layout.Add(button_21, flag=wx.SHAPED)
-        layout.Add(button_37, flag=wx.SHAPED)
         layout.Add(button_22, flag=wx.SHAPED)
         layout.Add(button_23, flag=wx.SHAPED)
         layout.Add(button_24, flag=wx.SHAPED)
@@ -469,6 +464,11 @@ class Main(wx.Frame):
         layout.Add(button_34, flag=wx.SHAPED)
         layout.Add(button_35, flag=wx.SHAPED)
         layout.Add(button_36, flag=wx.SHAPED)
+        layout.Add(button_37, flag=wx.SHAPED)
+        layout.Add(button_38, flag=wx.SHAPED)
+        layout.Add(button_39, flag=wx.SHAPED)
+        layout.Add(button_40, flag=wx.SHAPED)
+        layout.Add(button_41, flag=wx.SHAPED)
         layout.Add(text)
         panel.SetSizer(layout)
         self.Show(True)
