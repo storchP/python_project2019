@@ -11,7 +11,6 @@ import sys
 
 sys.stdout = open(os.devnull, "w")
 
-# TODO:URL37以降のバインド実装
 
 # URL LIST
 url_1 = "https://ch.nicovideo.jp/BeamManP/blomaga/ar1668259"
@@ -32,7 +31,6 @@ url_15 = "https://www.nicovideo.jp/tag/%E3%80%90MZ2%E4%BA%88%3A%E3%83%9F%E3%83%A
 url_16 = "https://www.nicovideo.jp/tag/%E3%80%90MZ2%E4%BA%88%3A%E3%81%9D%E3%81%AE%E4%BB%96%E3%80%91?sort=f&order=d"
 url_17 = "https://www.nicovideo.jp/tag/%e3%80%90MMD%e6%9d%afZERO2%e5%8f%82%e5%8a%a0%e5%8b%95%e7%94%bb%e3%80%91?sort=f&order=d"
 url_18 = "https://tweetdeck.twitter.com/"
-
 url_19 = "https://bowlroll.net/"
 url_20 = "https://www.nicovideo.jp/tag/MMD%e3%83%a2%e3%83%87%e3%83%ab%e9%85%8d%e5%b8%83%e3%81%82%e3%82%8a?sort=f&order=d"
 url_21 = "http://seiga.nicovideo.jp/tag/MMD%e3%83%a2%e3%83%87%e3%83%ab%e9%85%8d%e5%b8%83%e3%81%82%e3%82%8a?sort=image_created"
@@ -52,8 +50,6 @@ url_34 = "http://seiga.nicovideo.jp/tag/MME%e3%83%87%e3%83%bc%e3%82%bf%e9%85%8d%
 url_35 = "https://www.nicovideo.jp/tag/MMD%e3%83%84%e3%83%bc%e3%83%ab%e9%85%8d%e5%b8%83%e3%81%82%e3%82%8a?sort=f&order=d"
 url_36 = "http://seiga.nicovideo.jp/tag/MMD%e3%83%84%e3%83%bc%e3%83%ab%e9%85%8d%e5%b8%83%e3%81%82%e3%82%8a?target=illust"
 url_37 = "https://www.nicovideo.jp/tag/MMD%e3%83%a2%e3%83%bc%e3%82%b7%e3%83%a7%e3%83%b3%e9%85%8d%e5%b8%83%e3%81%82%e3%82%8a?sort=f&order=d"
-
-#TODO AVIUTLスクリプト講座 　AviUtlプロジェクトファイル配布動画　 フォトショップVIP AEP　Project
 url_38 ="https://www.nicovideo.jp/tag/AviUtl%e3%82%b9%e3%82%af%e3%83%aa%e3%83%97%e3%83%88%e8%ac%9b%e5%ba%a7?sort=f&order=d"
 url_39 ="https://www.nicovideo.jp/tag/AviUtl%e3%83%97%e3%83%ad%e3%82%b8%e3%82%a7%e3%82%af%e3%83%88%e3%83%95%e3%82%a1%e3%82%a4%e3%83%ab%e9%85%8d%e5%b8%83%e5%8b%95%e7%94%bb?sort=f&order=d"
 url_40 ="http://photoshopvip.net/"
@@ -437,7 +433,6 @@ class Main(wx.Frame):
         layout.Add(button_5, flag=wx.SHAPED)
         layout.Add(button_6, flag=wx.SHAPED)
         layout.Add(button_17, flag=wx.SHAPED)
-
         layout.Add(button_12, flag=wx.SHAPED)
         layout.Add(button_13, flag=wx.SHAPED)
         layout.Add(button_14, flag=wx.SHAPED)
@@ -448,15 +443,11 @@ class Main(wx.Frame):
         layout.Add(button_9, flag=wx.SHAPED)
         layout.Add(button_10, flag=wx.SHAPED)
         layout.Add(button_11, flag=wx.SHAPED)
-
         layout.Add(button_22, flag=wx.SHAPED)
-
         layout.Add(button_19, flag=wx.SHAPED)
         layout.Add(button_20, flag=wx.SHAPED)
         layout.Add(button_21, flag=wx.SHAPED)
-
         layout.Add(button_23, flag=wx.SHAPED)
-
         layout.Add(button_27, flag=wx.SHAPED)
         layout.Add(button_28, flag=wx.SHAPED)
         layout.Add(button_29, flag=wx.SHAPED)
@@ -479,7 +470,6 @@ class Main(wx.Frame):
         layout.Add(text)
         panel.SetSizer(layout)
         self.Show(True)
-
 
 # 画面表示
 def main():
