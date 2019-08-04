@@ -198,8 +198,6 @@ class Main(wx.Frame):
         # ボタン色
         button_color = '#2f4f4f'
 
-        # TODO:AEPプロジェクト、AVIUTLスクリプト配布、PhotoShopVIPへのアクセスを追加
-
         # ボタン設定
         button_1 = wx.Button(panel, wx.ID_ANY, 'ビームマンPの\n\rブロ☆マガ\r\nMMD杯ZERO2告知', size=(450, 450), style=wx.BORDER_NONE)
         button_2 = wx.Button(panel, wx.ID_ANY, 'MMD杯ZERO2\n\r進行動画マイリスト', size=(450, 450), style=wx.BORDER_NONE)
