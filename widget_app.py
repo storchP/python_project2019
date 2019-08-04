@@ -94,7 +94,7 @@ class Main(wx.Frame):
     def __init__(self, parent, id, title):
         # TITLE
         title = "MikuMikuWidget for MMD-CUP ZERO2　[Audience Edition]"
-        message="\n\r\n\r MikuMikuWidget\n\r for MMD-CUP ZERO\n\r [Audience Edition]"
+        message="\n\r\n\r MikuMikuWidget\n\r for MMD-CUP ZERO2\n\r [Audience Edition]"
 
         # パネル設定
         wx.Frame.__init__(self, parent, id, title, size=(510, 655), pos=(500, 50))
@@ -107,8 +107,6 @@ class Main(wx.Frame):
 
         # ボタン色
         button_color = '#2f4f4f'
-
-
 
         # ボタン設定
         button_1 = wx.Button(panel, wx.ID_ANY, 'ビームマンPの\n\rブロ☆マガ\r\nMMD杯ZERO2告知', size=(110, 110),  style=wx.BORDER_NONE)
