@@ -184,7 +184,7 @@ class Main(wx.Frame):
     def __init__(self, parent, id, title):
         # TITLE
         title = "MikuMikuWidget for MMD-CUP ZERO2　[Contributor Edition]"
-        message = "\n\r\n\r MikuMikuWidget\n\r for MMD-CUP ZERO\n\r [Contributor Edition]"
+        message = "\n\r\n\r MikuMikuWidget\n\r for MMD-CUP ZERO2\n\r [Contributor Edition]"
 
         # パネル設定
         wx.Frame.__init__(self, parent, id, title, size=(805, 960), pos=(500, 40))
