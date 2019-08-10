@@ -233,6 +233,12 @@ class Main(wx.Frame):
         layout.Add(button_10, flag=wx.SHAPED)
         layout.Add(button_11, flag=wx.SHAPED)
         layout.Add(text)
+        # アイコン定義
+        icon = wx.EmptyIcon()
+        icon.CopyFromBitmap(wx.Bitmap("icon.ico", wx.BITMAP_TYPE_ANY))
+        self.SetIcon(icon)
+
+        # パネル表示
         panel.SetSizer(layout)
         self.Show(True)
 
