@@ -1,3 +1,4 @@
 ビルド環境はpython2.7でpip install pyinstaller, pip install wxpythonした後
-pyinstaller foover.py --onefile --noconsole を実行して差し上げろ（迫真）
+pyinstaller widget_app.py --onefile --noconsole --icon="icon.ico" を実行して差し上げろ（迫真）
 ビルドされたexeファイルはdistに格納される。
+
