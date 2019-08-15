@@ -1,3 +1,6 @@
-ビルド環境はpython2.7でpip install pyinstaller, pip install wxpythonした後
+ビルド環境の構築とビルド方法
+
+python3.7をインストール後、pip install pyinstaller, pip install wxpythonした後にコマンドラインでwidget_app.pyを設置したディレクトリに移動
+以下のコマンド
 pyinstaller foover.py --onefile --noconsole を実行して差し上げろ（迫真）
-ビルドされたexeファイルはdistに格納される。
+ビルドされたexeファイルはdistに格納されるのでそれを使えばOK
