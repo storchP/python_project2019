@@ -8,8 +8,10 @@ import wx
 import os
 import webbrowser
 import sys
-
-
+# 一括取得ライブラリ
+import requests
+import json
+import urllib.request
 
 sys.stdout = open(os.devnull, "w")
 
@@ -33,6 +35,10 @@ url_15 ="https://www.nicovideo.jp/tag/%E3%80%90MZ2%E4%BA%88%3A%E3%83%9F%E3%83%A5
 url_16 ="https://www.nicovideo.jp/tag/%E3%80%90MZ2%E4%BA%88%3A%E3%81%9D%E3%81%AE%E4%BB%96%E3%80%91?sort=f&order=d"
 url_17 ="https://www.nicovideo.jp/tag/%e3%80%90MMD%e6%9d%afZERO2%e5%8f%82%e5%8a%a0%e5%8b%95%e7%94%bb%e3%80%91?sort=f&order=d"
 url_18 ="https://tweetdeck.twitter.com/"
+
+# API LIST
+
+api_url='https://api.search.nicovideo.jp/api/v2/snapshot/video/contents/search?q&targets=tags&title&fields=contentId,title,description,viewCounter,startTime,tags,thumbnailUrl,&_sort=-startTime&_offset=0&_limit=100&_context=apiguide&filters[tags][0]=%e3%80%90MMD%e6%9d%afZERO%e5%8f%82%e5%8a%a0%e5%8b%95%e7%94%bb%e3%80%91'
 
 # URL展開
 def click_button_1(event):
@@ -89,6 +95,15 @@ def click_button_17(event):
 def click_button_18(event):
     webbrowser.open(url_18)
 
+# 受け取ったJSONを格納 TODO:JSONの配列化処理と日本語エンコード
+def click_update_button(event):
+    response_obj = urllib.request.Request(api_url)
+    with urllib.request.urlopen(response_obj) as response_obj:
+        body = response_obj.read()
+    file = open('list.txt', 'w')
+    file.write(str(body))
+    file.close()
+
 # 基礎処理
 class Main(wx.Frame):
     def __init__(self, parent, id, title):
@@ -127,6 +142,9 @@ class Main(wx.Frame):
         button_16 = wx.Button(panel, wx.ID_ANY, 'MZ2予:その他', size=(110, 110),  style=wx.BORDER_NONE)
         button_17 = wx.Button(panel, wx.ID_ANY, 'MMD杯ZERO2\n\r参加動画', size=(110, 110),  style=wx.BORDER_NONE)
         button_18 = wx.Button(panel, wx.ID_ANY, 'TweetDeck', size=(110, 110),  style=wx.BORDER_NONE)
+
+        button_list = wx.Button(panel, wx.ID_ANY, '新着', size=(110, 110), style=wx.BORDER_NONE)
+
         text = wx.StaticText(panel, -1, message)
 
         # fontスタイル
@@ -149,6 +167,7 @@ class Main(wx.Frame):
         button_16.SetFont(font)
         button_17.SetFont(font)
         button_18.SetFont(font)
+        button_list.SetFont(font)
         text.SetFont(font)
         # ボタンカラー
         button_1.SetBackgroundColour(button_color)
@@ -169,6 +188,7 @@ class Main(wx.Frame):
         button_16.SetBackgroundColour(button_color)
         button_17.SetBackgroundColour(button_color)
         button_18.SetBackgroundColour(button_color)
+        button_list.SetBackgroundColour(button_color)
 
         # ボタン文字色
         button_1.SetForegroundColour(font_color)
@@ -189,6 +209,7 @@ class Main(wx.Frame):
         button_16.SetForegroundColour(font_color)
         button_17.SetForegroundColour(font_color)
         button_18.SetForegroundColour(font_color)
+        button_list.SetForegroundColour(font_color)
         text.SetForegroundColour(font_color)
         # ボタンクリック時のバインド
         button_1.Bind(wx.EVT_LEFT_DOWN, click_button_1)
@@ -209,6 +230,7 @@ class Main(wx.Frame):
         button_16.Bind(wx.EVT_LEFT_DOWN, click_button_16)
         button_17.Bind(wx.EVT_LEFT_DOWN, click_button_17)
         button_18.Bind(wx.EVT_LEFT_DOWN, click_button_18)
+        button_list.Bind(wx.EVT_LEFT_DOWN, click_update_button)
 
         # パネルレイアウト
         layout = wx.GridSizer(rows=6, cols=4, gap=(1, 1))
@@ -232,6 +254,7 @@ class Main(wx.Frame):
         layout.Add(button_9, flag=wx.SHAPED)
         layout.Add(button_10, flag=wx.SHAPED)
         layout.Add(button_11, flag=wx.SHAPED)
+        layout.Add(button_list, flag=wx.SHAPED)
         layout.Add(text)
         # アイコン定義
         icon = wx.EmptyIcon()
