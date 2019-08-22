@@ -97,7 +97,7 @@ class Main(wx.Frame):
         message="\n\r\n\r MikuMikuWidget\n\r for MMD-CUP ZERO2\n\r [Audience Edition]"
 
         # パネル設定
-        wx.Frame.__init__(self, parent, id, title, size=(510, 655), pos=(500, 50))
+        wx.Frame.__init__(self, parent, id, title, size=(510, 780), pos=(500, 50))
         panel = wx.Panel(self, wx.ID_ANY)
         # 背景色
         panel.SetBackgroundColour('#2b6a6b')
@@ -211,7 +211,7 @@ class Main(wx.Frame):
         button_18.Bind(wx.EVT_LEFT_DOWN, click_button_18)
 
         # パネルレイアウト
-        layout = wx.GridSizer(rows=5, cols=4, gap=(1, 1))
+        layout = wx.GridSizer(rows=6, cols=4, gap=(1, 1))
 
         # パーツ配置
         layout.Add(button_1, flag=wx.SHAPED)
