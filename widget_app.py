@@ -187,13 +187,13 @@ class Main(wx.Frame):
         wx.Frame.__init__(self, parent, id, title, size=(805, 960), pos=(500, 40))
         panel = wx.Panel(self, wx.ID_ANY)
         # 背景色
-        panel.SetBackgroundColour('#2b6a6b')
+        panel.SetBackgroundColour('#ff99ce')
 
         # 文字色
-        font_color = '#a1b3b3'
+        font_color = '#000000'
 
         # ボタン色
-        button_color = '#2f4f4f'
+        button_color = '#ffe6e6'
 
 
 
@@ -230,7 +230,7 @@ class Main(wx.Frame):
         button_26 = wx.Button(panel, wx.ID_ANY, 'てんぶくろ\r\nimasBPM計測', size=(450, 450), style=wx.BORDER_NONE)
         button_27 = wx.Button(panel, wx.ID_ANY, 'AviUtl公式', size=(450, 450), style=wx.BORDER_NONE)
         button_28 = wx.Button(panel, wx.ID_ANY, 'AviUtl講座', size=(450, 450), style=wx.BORDER_NONE)
-        button_29 = wx.Button(panel, wx.ID_ANY, 'AviUt\r\nlスクリプト講座', size=(450, 450), style=wx.BORDER_NONE)
+        button_29 = wx.Button(panel, wx.ID_ANY, 'AviUtl\r\nスクリプト講座', size=(450, 450), style=wx.BORDER_NONE)
         button_30 = wx.Button(panel, wx.ID_ANY, 'Aviutl\r\nプロジェクトファイル\r\n配布動画', size=(450, 450), style=wx.BORDER_NONE)
 
         button_31 = wx.Button(panel, wx.ID_ANY, 'Adobe公式', size=(450, 450), style=wx.BORDER_NONE)
