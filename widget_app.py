@@ -180,8 +180,8 @@ def click_button_39(event):
 class Main(wx.Frame):
     def __init__(self, parent, id, title):
         # TITLE
-        title = "アイマスWidget for windows アイマスPとニコマスPの為のウィジェット"
-        message = "\n\r\n\r Imas Widget\n\r Powerd by\n\r OpenWidget"
+        title = "M@ster Widget for windows アイマスPとニコマスPの為のウィジェット"
+        message = "Powerd by OpenWidget"
 
         # パネル設定
         wx.Frame.__init__(self, parent, id, title, size=(805, 960), pos=(500, 40))
@@ -195,8 +195,6 @@ class Main(wx.Frame):
         # ボタン色
         button_color = '#ffe6e6'
 
-
-
         # ボタン設定
         button_1 = wx.Button(panel, wx.ID_ANY, 'アイドルマスター公式', size=(450, 450), style=wx.BORDER_NONE)
         button_2 = wx.Button(panel, wx.ID_ANY, 'アイドルマスター\r\nコロムビア公式', size=(450, 450), style=wx.BORDER_NONE)
@@ -204,46 +202,39 @@ class Main(wx.Frame):
         button_4 = wx.Button(panel, wx.ID_ANY, 'アイドルマスター\n\rsideM\r\nランティス公式', size=(450, 450), style=wx.BORDER_NONE)
         button_5 = wx.Button(panel, wx.ID_ANY, 'アイマスDB', size=(450, 450), style=wx.BORDER_NONE)
         button_6 = wx.Button(panel, wx.ID_ANY, 'im@s news 765', size=(450, 450), style=wx.BORDER_NONE)
-
         button_7 = wx.Button(panel, wx.ID_ANY, 'デレラジ☆スター', size=(450, 450), style=wx.BORDER_NONE)
         button_8 = wx.Button(panel, wx.ID_ANY, 'シンデレラ\r\nパーティー', size=(450, 450), style=wx.BORDER_NONE)
         button_9 = wx.Button(panel, wx.ID_ANY, 'アイドルマスター\r\nミュージック\r\nオンザレイディオ', size=(450, 450), style=wx.BORDER_NONE)
         button_10 = wx.Button(panel, wx.ID_ANY, 'アイドルマスター\r\nミリオンラジオ！', size=(450, 450), style=wx.BORDER_NONE)
         button_11 = wx.Button(panel, wx.ID_ANY, 'アイドルマスター\r\nSideM ラジオ', size=(450, 450), style=wx.BORDER_NONE)
         button_12 = wx.Button(panel, wx.ID_ANY, '876TV', size=(450, 450), style=wx.BORDER_NONE)
-
         button_13 = wx.Button(panel, wx.ID_ANY, 'じゃらんホテル予約', size=(450, 450), style=wx.BORDER_NONE)
         button_14 = wx.Button(panel, wx.ID_ANY, 'トリバゴホテル予約', size=(450, 450), style=wx.BORDER_NONE)
         button_15 = wx.Button(panel, wx.ID_ANY, '日本旅行\n\rホテル/交通機関予約', size=(450, 450), style=wx.BORDER_NONE)
         button_16 = wx.Button(panel, wx.ID_ANY, 'バス比較なび', size=(450, 450), style=wx.BORDER_NONE)
         button_17 = wx.Button(panel, wx.ID_ANY, 'スカイスキャナー\n\r航空券比較予約', size=(450, 450), style=wx.BORDER_NONE)
         button_18 = wx.Button(panel, wx.ID_ANY, 'えきねっと\r\n新幹線予約', size=(450, 450), style=wx.BORDER_NONE)
-
         button_19 = wx.Button(panel, wx.ID_ANY, 'ホットペッパー\r\n飲食店予約検索', size=(450, 450), style=wx.BORDER_NONE)
         button_20 = wx.Button(panel, wx.ID_ANY, 'アソビストア', size=(450, 450), style=wx.BORDER_NONE)
         button_21 = wx.Button(panel, wx.ID_ANY, 'Amazon', size=(450, 450), style=wx.BORDER_NONE)
         button_22 = wx.Button(panel, wx.ID_ANY, 'Twipla', size=(450, 450), style=wx.BORDER_NONE)
         button_23 = wx.Button(panel, wx.ID_ANY, 'ATND', size=(450, 450), style=wx.BORDER_NONE)
         button_24 = wx.Button(panel, wx.ID_ANY, 'Twitter', size=(450, 450), style=wx.BORDER_NONE)
-
         button_25 = wx.Button(panel, wx.ID_ANY, 'アイマスMAD/PV\r\n制作TIPSまとめwiki', size=(450, 450), style=wx.BORDER_NONE)
         button_26 = wx.Button(panel, wx.ID_ANY, 'てんぶくろ\r\nimasBPM計測', size=(450, 450), style=wx.BORDER_NONE)
         button_27 = wx.Button(panel, wx.ID_ANY, 'AviUtl公式', size=(450, 450), style=wx.BORDER_NONE)
         button_28 = wx.Button(panel, wx.ID_ANY, 'AviUtl講座', size=(450, 450), style=wx.BORDER_NONE)
         button_29 = wx.Button(panel, wx.ID_ANY, 'AviUtl\r\nスクリプト講座', size=(450, 450), style=wx.BORDER_NONE)
         button_30 = wx.Button(panel, wx.ID_ANY, 'Aviutl\r\nプロジェクトファイル\r\n配布動画', size=(450, 450), style=wx.BORDER_NONE)
-
         button_31 = wx.Button(panel, wx.ID_ANY, 'Adobe公式', size=(450, 450), style=wx.BORDER_NONE)
         button_32 = wx.Button(panel, wx.ID_ANY, 'VideoCopilot', size=(450, 450), style=wx.BORDER_NONE)
         button_33 = wx.Button(panel, wx.ID_ANY, 'FlashbackJapan', size=(450, 450), style=wx.BORDER_NONE)
         button_34 = wx.Button(panel, wx.ID_ANY, 'AEP Project', size=(450, 450), style=wx.BORDER_NONE)
         button_35 = wx.Button(panel, wx.ID_ANY, 'バカ・アフター', size=(450, 450), style=wx.BORDER_NONE)
         button_36 = wx.Button(panel, wx.ID_ANY, 'モーション周期表\r\n(foxcodex MGレシピ)', size=(450, 450), style=wx.BORDER_NONE)
-
         button_37 = wx.Button(panel, wx.ID_ANY, 'Photoshop Vip\r\n静止画素材・フォント', size=(450, 450), style=wx.BORDER_NONE)
         button_38 = wx.Button(panel, wx.ID_ANY, 'VPVP wiki\n\rMMDポータル', size=(450, 450), style=wx.BORDER_NONE)
         button_39 = wx.Button(panel, wx.ID_ANY, 'OpenGameArt\r\n2D＆3Dフリー素材', size=(450, 450), style=wx.BORDER_NONE)
-
 
         text = wx.StaticText(panel, -1, message)
 
