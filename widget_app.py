@@ -1,6 +1,6 @@
 # coding: UTF-8
 
-# MikuMikuWidget For MMD-CUP-ZERO2 [Contributor Edition]
+# Master widget
 # project name OpenWidget
 # develop by storchP
 
@@ -24,7 +24,7 @@ url_8 = "https://www.nicovideo.jp/tag/%E3%80%90MZ2%3A%E3%83%89%E3%83%A9%E3%83%9E
 url_9 = "https://www.nicovideo.jp/tag/%E3%80%90MZ2%3A%E3%82%AE%E3%83%A3%E3%82%B0%E3%80%91?sort=f&order=d"
 url_10 = "https://www.nicovideo.jp/tag/%E3%80%90MZ2%3A%E3%83%9F%E3%83%A5%E3%83%BC%E3%82%B8%E3%83%83%E3%82%AF%E3%83%93%E3%83%87%E3%82%AA%E3%80%91?sort=f&order=d"
 url_11 = "https://www.nicovideo.jp/tag/%E3%80%90MZ2%3A%E3%81%9D%E3%81%AE%E4%BB%96%E3%80%91?sort=f&order=d"
-url_12 = "https://www.nicovideo.jp/tag/%E3%80%90MZ2%E4%BA%88%3A%E3%82%A2%E3%82%AF%E3%82%B7%E3%83%A7%E3%83%B3%E3%80%91?sort=f&order=d"
+url_12 = "https://www.youtube.com/user/nbgi/videos"
 url_13 = "https://www.nicovideo.jp/tag/%E3%80%90MZ2%E4%BA%88%3A%E3%83%89%E3%83%A9%E3%83%9E%E3%80%91?sort=f&order=d"
 url_14 = "https://www.nicovideo.jp/tag/%E3%80%90MZ2%E4%BA%88%3A%E3%82%AE%E3%83%A3%E3%82%B0%E3%80%91?sort=f&order=d"
 url_15 = "https://www.nicovideo.jp/tag/%E3%80%90MZ2%E4%BA%88%3A%E3%83%9F%E3%83%A5%E3%83%BC%E3%82%B8%E3%83%83%E3%82%AF%E3%83%93%E3%83%87%E3%82%AA%E3%80%91?sort=f&order=d"
@@ -173,11 +173,7 @@ def click_button_38(event):
 def click_button_39(event):
     webbrowser.open(url_39)
 
-def click_button_40(event):
-    webbrowser.open(url_40)
 
-def click_button_41(event):
-    webbrowser.open(url_41)
 
 # 基礎処理
 class Main(wx.Frame):
@@ -201,52 +197,57 @@ class Main(wx.Frame):
         # TODO:AEPプロジェクト、AVIUTLスクリプト配布、PhotoShopVIPへのアクセスを追加
 
         # ボタン設定
-        button_1 = wx.Button(panel, wx.ID_ANY, 'ビームマンPの\n\rブロ☆マガ\r\nMMD杯ZERO2告知', size=(450, 450), style=wx.BORDER_NONE)
-        button_2 = wx.Button(panel, wx.ID_ANY, 'MMD杯ZERO2\n\r進行動画マイリスト', size=(450, 450), style=wx.BORDER_NONE)
-        button_3 = wx.Button(panel, wx.ID_ANY, 'MMD杯ZERO2\n\r予告動画マイリスト', size=(450, 450), style=wx.BORDER_NONE)
-        button_4 = wx.Button(panel, wx.ID_ANY, 'MMD杯ZERO2\n\r参加動画マイリスト', size=(450, 450), style=wx.BORDER_NONE)
-        button_5 = wx.Button(panel, wx.ID_ANY, 'Angel-cup\n\rMMD杯ZERO2予告', size=(450, 450), style=wx.BORDER_NONE)
-        button_6 = wx.Button(panel, wx.ID_ANY, 'Angel-cup\n\rMMD杯ZERO2本番', size=(450, 450), style=wx.BORDER_NONE)
-        button_7 = wx.Button(panel, wx.ID_ANY, 'MZ2:アクション', size=(450, 450), style=wx.BORDER_NONE)
-        button_8 = wx.Button(panel, wx.ID_ANY, 'MZ2:ドラマ', size=(450, 450), style=wx.BORDER_NONE)
-        button_9 = wx.Button(panel, wx.ID_ANY, 'MZ2:ギャグ', size=(450, 450), style=wx.BORDER_NONE)
-        button_10 = wx.Button(panel, wx.ID_ANY, 'MZ2\n\rミュージックビデオ', size=(450, 450), style=wx.BORDER_NONE)
-        button_11 = wx.Button(panel, wx.ID_ANY, 'MZ2:その他', size=(450, 450), style=wx.BORDER_NONE)
-        button_12 = wx.Button(panel, wx.ID_ANY, 'MZ2予:アクション', size=(450, 450), style=wx.BORDER_NONE)
-        button_13 = wx.Button(panel, wx.ID_ANY, 'MZ2予:ドラマ', size=(450, 450), style=wx.BORDER_NONE)
-        button_14 = wx.Button(panel, wx.ID_ANY, 'MZ2予:ギャグ', size=(450, 450), style=wx.BORDER_NONE)
-        button_15 = wx.Button(panel, wx.ID_ANY, 'MZ2予\n\rミュージックビデオ', size=(450, 450), style=wx.BORDER_NONE)
-        button_16 = wx.Button(panel, wx.ID_ANY, 'MZ2予:その他', size=(450, 450), style=wx.BORDER_NONE)
-        button_17 = wx.Button(panel, wx.ID_ANY, 'MMD杯ZERO2\n\r参加動画', size=(450, 450), style=wx.BORDER_NONE)
-        button_18 = wx.Button(panel, wx.ID_ANY, 'TweetDeck', size=(450, 450), style=wx.BORDER_NONE)
-        button_19 = wx.Button(panel, wx.ID_ANY, 'bowlroll', size=(450, 450), style=wx.BORDER_NONE)
-        button_20 = wx.Button(panel, wx.ID_ANY, 'MMDモデル配布あり\n\r(動画)', size=(450, 450), style=wx.BORDER_NONE)
-        button_21 = wx.Button(panel, wx.ID_ANY, 'MMDモデル配布あり\n\r(静画)', size=(450, 450), style=wx.BORDER_NONE)
-        button_22 = wx.Button(panel, wx.ID_ANY, 'VPVP Wiki', size=(450, 450), style=wx.BORDER_NONE)
-        button_23 = wx.Button(panel, wx.ID_ANY, 'ニコニ・コモンズ\n\r素材ライブラリ', size=(450, 450), style=wx.BORDER_NONE)
-        button_24 = wx.Button(panel, wx.ID_ANY, 'フリーBGM\n\rDOVA SYNDROME', size=(450, 450), style=wx.BORDER_NONE)
-        button_25 = wx.Button(panel, wx.ID_ANY, '効果音ラボ', size=(450, 450), style=wx.BORDER_NONE)
-        button_26 = wx.Button(panel, wx.ID_ANY, 'フリー3D\n\rモデルまとめ\n\r(MOMIZIZM)', size=(450, 450), style=wx.BORDER_NONE)
-        button_27 = wx.Button(panel, wx.ID_ANY, 'MMDアクセサリ\n\r配布あり\n\r(動画)', size=(450, 450), style=wx.BORDER_NONE)
-        button_28 = wx.Button(panel, wx.ID_ANY, 'MMDアクセサリ\n\r配布あり\n\r(静画)', size=(450, 450), style=wx.BORDER_NONE)
-        button_29 = wx.Button(panel, wx.ID_ANY, 'MMDステージ\n\r配布あり\n\r(動画)', size=(450, 450), style=wx.BORDER_NONE)
-        button_30 = wx.Button(panel, wx.ID_ANY, 'MMDステージ\n\r配布あり\n\r(静画)', size=(450, 450), style=wx.BORDER_NONE)
-        button_31 = wx.Button(panel, wx.ID_ANY, 'MMD衣装配布あり\n\r(動画)', size=(450, 450), style=wx.BORDER_NONE)
-        button_32 = wx.Button(panel, wx.ID_ANY, 'MMD衣装配布あり\n\r(静画)', size=(450, 450), style=wx.BORDER_NONE)
-        button_33 = wx.Button(panel, wx.ID_ANY, 'MMEデータ配布あり\n\r(動画)', size=(450, 450), style=wx.BORDER_NONE)
-        button_34 = wx.Button(panel, wx.ID_ANY, 'MMEデータ配布あり\n\r(静画)', size=(450, 450), style=wx.BORDER_NONE)
-        button_35 = wx.Button(panel, wx.ID_ANY, 'MMDツール配布あり\n\r(動画)', size=(450, 450), style=wx.BORDER_NONE)
-        button_36 = wx.Button(panel, wx.ID_ANY, 'MMDツール配布あり\n\r(静画)', size=(450, 450), style=wx.BORDER_NONE)
-        button_37 = wx.Button(panel, wx.ID_ANY, 'MMDモーション\n\r配布あり', size=(450, 450), style=wx.BORDER_NONE)
-        button_38 = wx.Button(panel, wx.ID_ANY, 'AviUtl\n\rスクリプト講座', size=(450, 450), style=wx.BORDER_NONE)
+        button_1 = wx.Button(panel, wx.ID_ANY, 'アイドルマスター公式', size=(450, 450), style=wx.BORDER_NONE)
+        button_2 = wx.Button(panel, wx.ID_ANY, 'アイドルマスター\r\nコロムビア公式', size=(450, 450), style=wx.BORDER_NONE)
+        button_3 = wx.Button(panel, wx.ID_ANY, 'アイドルマスター\r\nミリオンライブ！\n\rランティス公式', size=(450, 450), style=wx.BORDER_NONE)
+        button_4 = wx.Button(panel, wx.ID_ANY, 'アイドルマスター\n\rsideM\r\nランティス公式', size=(450, 450), style=wx.BORDER_NONE)
+        button_5 = wx.Button(panel, wx.ID_ANY, 'アイマスDB', size=(450, 450), style=wx.BORDER_NONE)
+        button_6 = wx.Button(panel, wx.ID_ANY, 'im@s news 765', size=(450, 450), style=wx.BORDER_NONE)
+#
+        button_7 = wx.Button(panel, wx.ID_ANY, 'デレラジ☆スター', size=(450, 450), style=wx.BORDER_NONE)
+        button_8 = wx.Button(panel, wx.ID_ANY, 'シンデレラ\r\nパーティー', size=(450, 450), style=wx.BORDER_NONE)
+        button_9 = wx.Button(panel, wx.ID_ANY, 'アイドルマスター\r\nミュージック\r\nオンザレイディオ', size=(450, 450), style=wx.BORDER_NONE)
+        button_10 = wx.Button(panel, wx.ID_ANY, 'アイドルマスター\r\nミリオンラジオ！', size=(450, 450), style=wx.BORDER_NONE)
+        button_11 = wx.Button(panel, wx.ID_ANY, 'アイドルマスター\r\nSideM ラジオ', size=(450, 450), style=wx.BORDER_NONE)
+        button_12 = wx.Button(panel, wx.ID_ANY, '876TV', size=(450, 450), style=wx.BORDER_NONE)
+
+        button_13 = wx.Button(panel, wx.ID_ANY, 'じゃらんホテル予約', size=(450, 450), style=wx.BORDER_NONE)
+        button_14 = wx.Button(panel, wx.ID_ANY, 'トリバゴホテル予約', size=(450, 450), style=wx.BORDER_NONE)
+        button_15 = wx.Button(panel, wx.ID_ANY, '日本旅行\n\rホテル/交通機関予約', size=(450, 450), style=wx.BORDER_NONE)
+        button_16 = wx.Button(panel, wx.ID_ANY, 'バス比較なび', size=(450, 450), style=wx.BORDER_NONE)
+        button_17 = wx.Button(panel, wx.ID_ANY, 'スカイスキャナー\n\r航空券比較予約', size=(450, 450), style=wx.BORDER_NONE)
+        button_18 = wx.Button(panel, wx.ID_ANY, 'えきねっと\r\n新幹線予約', size=(450, 450), style=wx.BORDER_NONE)
+#
+        button_19 = wx.Button(panel, wx.ID_ANY, 'ホットペッパー\r\n飲食店予約検索', size=(450, 450), style=wx.BORDER_NONE)
+        button_20 = wx.Button(panel, wx.ID_ANY, 'アソビストア', size=(450, 450), style=wx.BORDER_NONE)
+        button_21 = wx.Button(panel, wx.ID_ANY, 'Amazon', size=(450, 450), style=wx.BORDER_NONE)
+        button_22 = wx.Button(panel, wx.ID_ANY, 'Twipla', size=(450, 450), style=wx.BORDER_NONE)
+        button_23 = wx.Button(panel, wx.ID_ANY, 'ATND', size=(450, 450), style=wx.BORDER_NONE)
+        button_24 = wx.Button(panel, wx.ID_ANY, 'Twitter', size=(450, 450), style=wx.BORDER_NONE)
+#
+        button_25 = wx.Button(panel, wx.ID_ANY, 'アイマスMAD/PV\r\n制作TIPSまとめwiki', size=(450, 450), style=wx.BORDER_NONE)
+        button_26 = wx.Button(panel, wx.ID_ANY, 'てんぶくろ\r\nimasBPM計測', size=(450, 450), style=wx.BORDER_NONE)
+        button_27 = wx.Button(panel, wx.ID_ANY, 'AviUtl公式', size=(450, 450), style=wx.BORDER_NONE)
+        button_28 = wx.Button(panel, wx.ID_ANY, 'AviUtl講座', size=(450, 450), style=wx.BORDER_NONE)
+        button_29 = wx.Button(panel, wx.ID_ANY, 'AviUt\r\nlスクリプト講座', size=(450, 450), style=wx.BORDER_NONE)
+        button_30 = wx.Button(panel, wx.ID_ANY, 'Aviutl\r\nプロジェクトファイル\r\n配布動画', size=(450, 450), style=wx.BORDER_NONE)
+#
+        button_31 = wx.Button(panel, wx.ID_ANY, 'Adobe公式', size=(450, 450), style=wx.BORDER_NONE)
+        button_32 = wx.Button(panel, wx.ID_ANY, 'VideoCopilot', size=(450, 450), style=wx.BORDER_NONE)
+        button_33 = wx.Button(panel, wx.ID_ANY, 'FlashbackJapan', size=(450, 450), style=wx.BORDER_NONE)
+        button_34 = wx.Button(panel, wx.ID_ANY, 'AEP Project', size=(450, 450), style=wx.BORDER_NONE)
+        button_35 = wx.Button(panel, wx.ID_ANY, 'バカ・アフター', size=(450, 450), style=wx.BORDER_NONE)
+        button_36 = wx.Button(panel, wx.ID_ANY, 'モーション周期表\r\n(foxcodex MGレシピ)', size=(450, 450), style=wx.BORDER_NONE)
+
+        button_37 = wx.Button(panel, wx.ID_ANY, 'Photoshop Vip\r\n静止画素材・フォント', size=(450, 450), style=wx.BORDER_NONE)
+        button_38 = wx.Button(panel, wx.ID_ANY, 'VPVP wiki\n\rMMDポータル', size=(450, 450), style=wx.BORDER_NONE)
         button_39 = wx.Button(panel, wx.ID_ANY, 'AviUtl\n\rプロジェクトファイル\n\r配布動画', size=(450, 450), style=wx.BORDER_NONE)
-        button_40 = wx.Button(panel, wx.ID_ANY, '静止画素材情報\n\rPHOTOSHOP VIP', size=(450, 450), style=wx.BORDER_NONE)
-        button_41 = wx.Button(panel, wx.ID_ANY, 'AE tips集\n\rAEP Project', size=(450, 450), style=wx.BORDER_NONE)
+
 
         text = wx.StaticText(panel, -1, message)
 
         # fontスタイル
-        font = wx.Font(10, wx.FONTFAMILY_DEFAULT, wx.FONTSTYLE_NORMAL, wx.FONTWEIGHT_NORMAL, False, "メイリオ")
+        font = wx.Font(9, wx.FONTFAMILY_DEFAULT, wx.FONTSTYLE_NORMAL, wx.FONTWEIGHT_NORMAL, False, "メイリオ")
         title = wx.Font(8, wx.FONTFAMILY_DEFAULT, wx.FONTSTYLE_NORMAL, wx.FONTWEIGHT_NORMAL, False, "メイリオ")
 
         button_1.SetFont(font)
@@ -288,8 +289,6 @@ class Main(wx.Frame):
         button_37.SetFont(font)
         button_38.SetFont(font)
         button_39.SetFont(font)
-        button_40.SetFont(font)
-        button_41.SetFont(font)
         text.SetFont(title)
 
         # ボタンカラー
@@ -333,8 +332,7 @@ class Main(wx.Frame):
         button_37.SetBackgroundColour(button_color)
         button_38.SetBackgroundColour(button_color)
         button_39.SetBackgroundColour(button_color)
-        button_40.SetBackgroundColour(button_color)
-        button_41.SetBackgroundColour(button_color)
+
 
         # ボタン文字色
         button_1.SetForegroundColour(font_color)
@@ -376,9 +374,7 @@ class Main(wx.Frame):
         button_37.SetForegroundColour(font_color)
         button_38.SetForegroundColour(font_color)
         button_39.SetForegroundColour(font_color)
-        button_40.SetForegroundColour(font_color)
-        button_41.SetForegroundColour(font_color)
-        text.SetForegroundColour(font_color)
+
 
         # ボタンクリック時のバインド
         button_1.Bind(wx.EVT_LEFT_DOWN, click_button_1)
@@ -420,8 +416,7 @@ class Main(wx.Frame):
         button_37.Bind(wx.EVT_LEFT_DOWN, click_button_37)
         button_38.Bind(wx.EVT_LEFT_DOWN, click_button_38)
         button_39.Bind(wx.EVT_LEFT_DOWN, click_button_39)
-        button_40.Bind(wx.EVT_LEFT_DOWN, click_button_40)
-        button_41.Bind(wx.EVT_LEFT_DOWN, click_button_41)
+
         # パネルレイアウト
         layout = wx.GridSizer(rows=7, cols=6, gap=(1, 1))
 
@@ -432,22 +427,26 @@ class Main(wx.Frame):
         layout.Add(button_4, flag=wx.SHAPED)
         layout.Add(button_5, flag=wx.SHAPED)
         layout.Add(button_6, flag=wx.SHAPED)
-        layout.Add(button_17, flag=wx.SHAPED)
-        layout.Add(button_12, flag=wx.SHAPED)
-        layout.Add(button_13, flag=wx.SHAPED)
-        layout.Add(button_14, flag=wx.SHAPED)
-        layout.Add(button_15, flag=wx.SHAPED)
-        layout.Add(button_16, flag=wx.SHAPED)
         layout.Add(button_7, flag=wx.SHAPED)
         layout.Add(button_8, flag=wx.SHAPED)
         layout.Add(button_9, flag=wx.SHAPED)
         layout.Add(button_10, flag=wx.SHAPED)
         layout.Add(button_11, flag=wx.SHAPED)
-        layout.Add(button_22, flag=wx.SHAPED)
+        layout.Add(button_12, flag=wx.SHAPED)
+        layout.Add(button_13, flag=wx.SHAPED)
+        layout.Add(button_14, flag=wx.SHAPED)
+        layout.Add(button_15, flag=wx.SHAPED)
+        layout.Add(button_16, flag=wx.SHAPED)
+        layout.Add(button_17, flag=wx.SHAPED)
+        layout.Add(button_18, flag=wx.SHAPED)
         layout.Add(button_19, flag=wx.SHAPED)
         layout.Add(button_20, flag=wx.SHAPED)
         layout.Add(button_21, flag=wx.SHAPED)
+        layout.Add(button_22, flag=wx.SHAPED)
         layout.Add(button_23, flag=wx.SHAPED)
+        layout.Add(button_24, flag=wx.SHAPED)
+        layout.Add(button_25, flag=wx.SHAPED)
+        layout.Add(button_26, flag=wx.SHAPED)
         layout.Add(button_27, flag=wx.SHAPED)
         layout.Add(button_28, flag=wx.SHAPED)
         layout.Add(button_29, flag=wx.SHAPED)
@@ -459,14 +458,9 @@ class Main(wx.Frame):
         layout.Add(button_35, flag=wx.SHAPED)
         layout.Add(button_36, flag=wx.SHAPED)
         layout.Add(button_37, flag=wx.SHAPED)
-        layout.Add(button_24, flag=wx.SHAPED)
-        layout.Add(button_25, flag=wx.SHAPED)
-        layout.Add(button_26, flag=wx.SHAPED)
         layout.Add(button_38, flag=wx.SHAPED)
         layout.Add(button_39, flag=wx.SHAPED)
-        layout.Add(button_40, flag=wx.SHAPED)
-        layout.Add(button_41, flag=wx.SHAPED)
-        layout.Add(button_18, flag=wx.SHAPED)
+
         layout.Add(text)
         panel.SetSizer(layout)
         self.Show(True)
