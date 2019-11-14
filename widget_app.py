@@ -13,9 +13,10 @@ sys.stdout = open(os.devnull, "w")
 
 
 # URL LIST
-url_1 = "https://ch.nicovideo.jp/BeamManP/blomaga/ar1668259"
-url_2 = "https://www.nicovideo.jp/mylist/66007798"
-url_3 = "https://www.nicovideo.jp/mylist/66007800"
+url_1 = "https://idolmaster.jp/"
+url_2 = "https://columbia.jp/idolmaster/"
+url_3 = "https://www.lantis.jp/imas/"
+
 url_4 = "https://www.nicovideo.jp/mylist/66007802"
 url_5 = "http://angel-cup.ch2.cc/mz02_yo/"
 url_6 = "http://angel-cup.ch2.cc/mz02/"
@@ -50,10 +51,9 @@ url_34 = "http://seiga.nicovideo.jp/tag/MME%e3%83%87%e3%83%bc%e3%82%bf%e9%85%8d%
 url_35 = "https://www.nicovideo.jp/tag/MMD%e3%83%84%e3%83%bc%e3%83%ab%e9%85%8d%e5%b8%83%e3%81%82%e3%82%8a?sort=f&order=d"
 url_36 = "http://seiga.nicovideo.jp/tag/MMD%e3%83%84%e3%83%bc%e3%83%ab%e9%85%8d%e5%b8%83%e3%81%82%e3%82%8a?target=illust"
 url_37 = "https://www.nicovideo.jp/tag/MMD%e3%83%a2%e3%83%bc%e3%82%b7%e3%83%a7%e3%83%b3%e9%85%8d%e5%b8%83%e3%81%82%e3%82%8a?sort=f&order=d"
-url_38 ="https://www.nicovideo.jp/tag/AviUtl%e3%82%b9%e3%82%af%e3%83%aa%e3%83%97%e3%83%88%e8%ac%9b%e5%ba%a7?sort=f&order=d"
-url_39 ="https://www.nicovideo.jp/tag/AviUtl%e3%83%97%e3%83%ad%e3%82%b8%e3%82%a7%e3%82%af%e3%83%88%e3%83%95%e3%82%a1%e3%82%a4%e3%83%ab%e9%85%8d%e5%b8%83%e5%8b%95%e7%94%bb?sort=f&order=d"
-url_40 ="http://photoshopvip.net/"
-url_41 ="http://ae-users.com/jp/"
+url_38 = "https://www.nicovideo.jp/tag/AviUtl%e3%82%b9%e3%82%af%e3%83%aa%e3%83%97%e3%83%88%e8%ac%9b%e5%ba%a7?sort=f&order=d"
+url_39 = "https://opengameart.org/"
+
 
 # URL展開
 def click_button_1(event):
@@ -179,8 +179,8 @@ def click_button_39(event):
 class Main(wx.Frame):
     def __init__(self, parent, id, title):
         # TITLE
-        title = "MikuMikuWidget for MMD-CUP ZERO2　[Contributor Edition]"
-        message = "\n\r\n\r MikuMikuWidget\n\r for MMD-CUP ZERO\n\r [Contributor Edition]"
+        title = "アイマスWidget for windows アイマスPとニコマスPの為のウィジェット"
+        message = "\n\r\n\r Imas Widget\n\r Powerd by\n\r OpenWidget"
 
         # パネル設定
         wx.Frame.__init__(self, parent, id, title, size=(805, 960), pos=(500, 40))
@@ -194,7 +194,7 @@ class Main(wx.Frame):
         # ボタン色
         button_color = '#2f4f4f'
 
-        # TODO:AEPプロジェクト、AVIUTLスクリプト配布、PhotoShopVIPへのアクセスを追加
+
 
         # ボタン設定
         button_1 = wx.Button(panel, wx.ID_ANY, 'アイドルマスター公式', size=(450, 450), style=wx.BORDER_NONE)
@@ -203,7 +203,7 @@ class Main(wx.Frame):
         button_4 = wx.Button(panel, wx.ID_ANY, 'アイドルマスター\n\rsideM\r\nランティス公式', size=(450, 450), style=wx.BORDER_NONE)
         button_5 = wx.Button(panel, wx.ID_ANY, 'アイマスDB', size=(450, 450), style=wx.BORDER_NONE)
         button_6 = wx.Button(panel, wx.ID_ANY, 'im@s news 765', size=(450, 450), style=wx.BORDER_NONE)
-#
+
         button_7 = wx.Button(panel, wx.ID_ANY, 'デレラジ☆スター', size=(450, 450), style=wx.BORDER_NONE)
         button_8 = wx.Button(panel, wx.ID_ANY, 'シンデレラ\r\nパーティー', size=(450, 450), style=wx.BORDER_NONE)
         button_9 = wx.Button(panel, wx.ID_ANY, 'アイドルマスター\r\nミュージック\r\nオンザレイディオ', size=(450, 450), style=wx.BORDER_NONE)
@@ -217,21 +217,21 @@ class Main(wx.Frame):
         button_16 = wx.Button(panel, wx.ID_ANY, 'バス比較なび', size=(450, 450), style=wx.BORDER_NONE)
         button_17 = wx.Button(panel, wx.ID_ANY, 'スカイスキャナー\n\r航空券比較予約', size=(450, 450), style=wx.BORDER_NONE)
         button_18 = wx.Button(panel, wx.ID_ANY, 'えきねっと\r\n新幹線予約', size=(450, 450), style=wx.BORDER_NONE)
-#
+
         button_19 = wx.Button(panel, wx.ID_ANY, 'ホットペッパー\r\n飲食店予約検索', size=(450, 450), style=wx.BORDER_NONE)
         button_20 = wx.Button(panel, wx.ID_ANY, 'アソビストア', size=(450, 450), style=wx.BORDER_NONE)
         button_21 = wx.Button(panel, wx.ID_ANY, 'Amazon', size=(450, 450), style=wx.BORDER_NONE)
         button_22 = wx.Button(panel, wx.ID_ANY, 'Twipla', size=(450, 450), style=wx.BORDER_NONE)
         button_23 = wx.Button(panel, wx.ID_ANY, 'ATND', size=(450, 450), style=wx.BORDER_NONE)
         button_24 = wx.Button(panel, wx.ID_ANY, 'Twitter', size=(450, 450), style=wx.BORDER_NONE)
-#
+
         button_25 = wx.Button(panel, wx.ID_ANY, 'アイマスMAD/PV\r\n制作TIPSまとめwiki', size=(450, 450), style=wx.BORDER_NONE)
         button_26 = wx.Button(panel, wx.ID_ANY, 'てんぶくろ\r\nimasBPM計測', size=(450, 450), style=wx.BORDER_NONE)
         button_27 = wx.Button(panel, wx.ID_ANY, 'AviUtl公式', size=(450, 450), style=wx.BORDER_NONE)
         button_28 = wx.Button(panel, wx.ID_ANY, 'AviUtl講座', size=(450, 450), style=wx.BORDER_NONE)
         button_29 = wx.Button(panel, wx.ID_ANY, 'AviUt\r\nlスクリプト講座', size=(450, 450), style=wx.BORDER_NONE)
         button_30 = wx.Button(panel, wx.ID_ANY, 'Aviutl\r\nプロジェクトファイル\r\n配布動画', size=(450, 450), style=wx.BORDER_NONE)
-#
+
         button_31 = wx.Button(panel, wx.ID_ANY, 'Adobe公式', size=(450, 450), style=wx.BORDER_NONE)
         button_32 = wx.Button(panel, wx.ID_ANY, 'VideoCopilot', size=(450, 450), style=wx.BORDER_NONE)
         button_33 = wx.Button(panel, wx.ID_ANY, 'FlashbackJapan', size=(450, 450), style=wx.BORDER_NONE)
@@ -241,7 +241,7 @@ class Main(wx.Frame):
 
         button_37 = wx.Button(panel, wx.ID_ANY, 'Photoshop Vip\r\n静止画素材・フォント', size=(450, 450), style=wx.BORDER_NONE)
         button_38 = wx.Button(panel, wx.ID_ANY, 'VPVP wiki\n\rMMDポータル', size=(450, 450), style=wx.BORDER_NONE)
-        button_39 = wx.Button(panel, wx.ID_ANY, 'AviUtl\n\rプロジェクトファイル\n\r配布動画', size=(450, 450), style=wx.BORDER_NONE)
+        button_39 = wx.Button(panel, wx.ID_ANY, 'OpenGameArt/2D＆3Dフリー素材', size=(450, 450), style=wx.BORDER_NONE)
 
 
         text = wx.StaticText(panel, -1, message)
