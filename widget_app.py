@@ -19,14 +19,12 @@ url_3 = "https://www.lantis.jp/imas/"
 url_4 = "https://www.lantis.jp/sidem/"
 url_5 = "http://imas-db.jp/"
 url_6 = "http://imasnews765.com/"
-
 url_7 = "https://ch.nicovideo.jp/dereradi"
 url_8 = "https://ch.nicovideo.jp/cinderellaparty"
 url_9 = "https://ch.nicovideo.jp/imas-music"
 url_10 = "https://ch.nicovideo.jp/MillionRADIO"
 url_11 = "https://ch.nicovideo.jp/sidem"
 url_12 = "https://www.youtube.com/user/nbgi/videos"
-
 url_13 ="https://www.jalan.net/"
 url_14 ="https://www.trivago.jp/"
 url_15 ="https://www.nta.co.jp/"
@@ -54,7 +52,7 @@ url_36 ="http://foxcodex.html.xdomain.jp/"
 url_37 ="http://photoshopvip.net/"
 url_38 ="https://w.atwiki.jp/vpvpwiki/"
 url_39 ="https://opengameart.org/"
-
+url_40 ="https://artjuku.com/3d-cg-free-model/"
 
 # URL展開
 def click_button_1(event):
@@ -174,14 +172,15 @@ def click_button_38(event):
 def click_button_39(event):
     webbrowser.open(url_39)
 
-
+def click_button40(event):
+    webbrowser.open(url_40)
 
 # 基礎処理
 class Main(wx.Frame):
     def __init__(self, parent, id, title):
         # TITLE
-        title = "M@ster Widget for windows アイマスPとニコマスPの為のウィジェット"
-        message = "Powerd by OpenWidget"
+        title = "アイマスウィジェット for windows アイマスPとニコマスPの為のウィジェット"
+        message = "Powered by OpenWidget"
 
         # パネル設定
         wx.Frame.__init__(self, parent, id, title, size=(805, 960), pos=(500, 40))
@@ -235,7 +234,7 @@ class Main(wx.Frame):
         button_37 = wx.Button(panel, wx.ID_ANY, 'Photoshop Vip\r\n静止画素材・フォント', size=(450, 450), style=wx.BORDER_NONE)
         button_38 = wx.Button(panel, wx.ID_ANY, 'VPVP wiki\n\rMMDポータル', size=(450, 450), style=wx.BORDER_NONE)
         button_39 = wx.Button(panel, wx.ID_ANY, 'OpenGameArt\r\n2D＆3Dフリー素材', size=(450, 450), style=wx.BORDER_NONE)
-
+        button_40 = wx.Button(panel, wx.ID_ANY, 'ARTJUKU\r\n3Dフリー素材まとめ', size=(450, 450), style=wx.BORDER_NONE)
         text = wx.StaticText(panel, -1, message)
 
         # fontスタイル
@@ -281,6 +280,7 @@ class Main(wx.Frame):
         button_37.SetFont(font)
         button_38.SetFont(font)
         button_39.SetFont(font)
+        button_40.SetFont(font)
         text.SetFont(title)
 
         # ボタンカラー
@@ -324,7 +324,7 @@ class Main(wx.Frame):
         button_37.SetBackgroundColour(button_color)
         button_38.SetBackgroundColour(button_color)
         button_39.SetBackgroundColour(button_color)
-
+        button_40.SetBackgroundColour(button_color)
 
         # ボタン文字色
         button_1.SetForegroundColour(font_color)
@@ -366,7 +366,7 @@ class Main(wx.Frame):
         button_37.SetForegroundColour(font_color)
         button_38.SetForegroundColour(font_color)
         button_39.SetForegroundColour(font_color)
-
+        button_40.SetForegroundColour(font_color)
 
         # ボタンクリック時のバインド
         button_1.Bind(wx.EVT_LEFT_DOWN, click_button_1)
@@ -408,6 +408,7 @@ class Main(wx.Frame):
         button_37.Bind(wx.EVT_LEFT_DOWN, click_button_37)
         button_38.Bind(wx.EVT_LEFT_DOWN, click_button_38)
         button_39.Bind(wx.EVT_LEFT_DOWN, click_button_39)
+        button_40.Bind(wx.EVT_LEFT_DOWN, click_button_39)
 
         # パネルレイアウト
         layout = wx.GridSizer(rows=7, cols=6, gap=(1, 1))
@@ -452,7 +453,7 @@ class Main(wx.Frame):
         layout.Add(button_37, flag=wx.SHAPED)
         layout.Add(button_38, flag=wx.SHAPED)
         layout.Add(button_39, flag=wx.SHAPED)
-
+        layout.Add(button_40, flag=wx.SHAPED)
         layout.Add(text)
         panel.SetSizer(layout)
         self.Show(True)
