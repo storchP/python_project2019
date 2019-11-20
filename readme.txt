@@ -1,4 +1,4 @@
-【M@ster Widget for windows powerd by open widget project】
+【アイマスウィジェット for windows powered by open widget project】
 
 解説:
 このアプリケーションはアイマスPやニコマスPにとって頻繁に行われるweb巡回を
