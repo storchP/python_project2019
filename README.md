@@ -1,14 +1,29 @@
+# 【アイマスウィジェット for windows powered by open widget project】
+
+# 解説:
+このアプリケーションはアイマスPやニコマスPにとって頻繁に行われるweb巡回を
+一定のシナリオに沿って、双方にとって有用なリンクを順番別に行う事を想定しています。
+
+# システム要件:
+WindowsXP～womdpws10までのOSかつ、32bit,64bit双方で動作しますが、利用者の環境上による問題が起きる可能性もございます。
+
+# 連絡先：
+@storchP_mmd
+
+# 補足：
+尚、こうしたアプリケーション開発について、興味のある方、要望のある方は前述の
+Twitterまでご連絡下さいませ。
+また、私のアプリ開発を応援したいと言う方は下記のウィッシュリストからギフトを
+送って頂けると嬉しいです。
+https://bit.ly/2pf1SeS
+
+
 # project open widget 2019
 ex mission python widget apps
 
-## widget_app.exeの使い方
+## ソースコード取得
 Clone or download ボタンを押せばアプリ一式落ちてきます。<br>
-widget_app.pyや.ideaはオマケなので気にしなくて良いです（半ギレ）
-<br>
 distフォルダの中に入っているwidget_app.exeを単独で起動させて下さい。
-
-AEおじさん、MMDおじさん、DTMおじさん、Unityおじさん、Photoshopおじさん<br>
-etc...が必要とするであろうウェブサイトを順番にクリックするだけで巡回できるウィジェットが開きます。
 
 ## カスタマイズ
 widget_app.pyに記述されているラベルとURLは一意ですので、ここを書き換えてカスタマイズ出来ます。
