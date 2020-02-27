@@ -153,7 +153,7 @@ class Main(wx.Frame):
         message = "\n\r\n\r MikuMikuWidget2\n\r [Contributor Edition]"
 
         # パネル設定
-        wx.Frame.__init__(self, parent, id, title, size=(746, 770), pos=(500, 40))
+        wx.Frame.__init__(self, parent, id, title, size=(780, 800), pos=(500, 40))
         panel = wx.Panel(self, wx.ID_ANY)
         # 背景色
         panel.SetBackgroundColour('#2b6a6b')
@@ -378,10 +378,7 @@ class Main(wx.Frame):
         layout.Add(button_42, flag=wx.SHAPED)
         layout.Add(text)
 
-        # アイコン定義
-        icon = wx.EmptyIcon()
-        icon.CopyFromBitmap(wx.Bitmap("icon.ico", wx.BITMAP_TYPE_ANY))
-        self.SetIcon(icon)
+
         # パネル表示
         panel.SetSizer(layout)
         self.Show(True)
