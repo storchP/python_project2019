@@ -44,6 +44,7 @@ url_38 ="https://www.nicovideo.jp/tag/AviUtl%e3%82%b9%e3%82%af%e3%83%aa%e3%83%97
 url_39 ="https://www.nicovideo.jp/tag/AviUtl%e3%83%97%e3%83%ad%e3%82%b8%e3%82%a7%e3%82%af%e3%83%88%e3%83%95%e3%82%a1%e3%82%a4%e3%83%ab%e9%85%8d%e5%b8%83%e5%8b%95%e7%94%bb?sort=f&order=d"
 url_40 ="http://photoshopvip.net/"
 url_41 ="http://ae-users.com/jp/"
+url_42 ="http://web.archive.org/web/20021214075533/www5a.biglobe.ne.jp/~oadas/compose/toppage.htm"
 
 # URL展開
 
@@ -140,6 +141,10 @@ def click_button_40(event):
 def click_button_41(event):
     webbrowser.open(url_41)
 
+def click_button_42(event):
+    webbrowser.open(url_42)
+
+
 # 基礎処理
 class Main(wx.Frame):
     def __init__(self, parent, id, title):
@@ -191,7 +196,7 @@ class Main(wx.Frame):
         button_39 = wx.Button(panel, wx.ID_ANY, 'AviUtl\n\rプロジェクトファイル\n\r配布動画', size=(450, 450), style=wx.BORDER_NONE)
         button_40 = wx.Button(panel, wx.ID_ANY, '静止画素材情報\n\rPHOTOSHOP VIP', size=(450, 450), style=wx.BORDER_NONE)
         button_41 = wx.Button(panel, wx.ID_ANY, 'AE tips集\n\rAEP Project', size=(450, 450), style=wx.BORDER_NONE)
-
+        button_42 = wx.Button(panel, wx.ID_ANY, 'OADAS\n\r作曲入門講座', size=(450, 450), style=wx.BORDER_NONE)
         text = wx.StaticText(panel, -1, message)
 
         # fontスタイル
@@ -229,6 +234,7 @@ class Main(wx.Frame):
         button_39.SetFont(font)
         button_40.SetFont(font)
         button_41.SetFont(font)
+        button_42.SetFont(font)
         text.SetFont(title)
 
         # ボタンカラー
@@ -264,6 +270,7 @@ class Main(wx.Frame):
         button_39.SetBackgroundColour(button_color)
         button_40.SetBackgroundColour(button_color)
         button_41.SetBackgroundColour(button_color)
+        button_42.SetBackgroundColour(button_color)
 
         # ボタン文字色
         button_11.SetForegroundColour(font_color)
@@ -297,6 +304,7 @@ class Main(wx.Frame):
         button_39.SetForegroundColour(font_color)
         button_40.SetForegroundColour(font_color)
         button_41.SetForegroundColour(font_color)
+        button_42.SetForegroundColour(font_color)
         text.SetForegroundColour(font_color)
 
         # ボタンクリック時のバインド
@@ -331,6 +339,7 @@ class Main(wx.Frame):
         button_39.Bind(wx.EVT_LEFT_DOWN, click_button_39)
         button_40.Bind(wx.EVT_LEFT_DOWN, click_button_40)
         button_41.Bind(wx.EVT_LEFT_DOWN, click_button_41)
+        button_42.Bind(wx.EVT_LEFT_DOWN, click_button_41)
         # パネルレイアウト
         layout = wx.GridSizer(rows=6, cols=6, gap=(1, 1))
 
@@ -366,7 +375,7 @@ class Main(wx.Frame):
         layout.Add(button_39, flag=wx.SHAPED)
         layout.Add(button_40, flag=wx.SHAPED)
         layout.Add(button_41, flag=wx.SHAPED)
-
+        layout.Add(button_42, flag=wx.SHAPED)
         layout.Add(text)
 
         # アイコン定義
