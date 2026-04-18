@@ -1,10 +1,10 @@
-# project open widget 2019
+# project open widget 2019-2026
 ex mission python widget apps
 ## widget_app.exeの使い方
 Clone or download ボタンを押せばアプリ一式落ちてきます。<br>
 widget_app.pyや.ideaはオマケなので気にしなくて良いです（半ギレ）
 <br>
-distフォルダの中に入っているwidget_app.exeを単独で起動させて下さい。
+distフォルダの中に入っている実行ファイルを単独で起動させて下さい。
 
 AEおじさん、MMDおじさん、DTMおじさん、Unityおじさん、Photoshopおじさん<br>
 etc...が必要とするであろうウェブサイトを順番にクリックするだけで巡回できるウィジェットが開きます。
@@ -15,4 +15,4 @@ widget_app.pyに記述されているラベルとURLは一意ですので、こ�
 
 ## Donation(所謂おひねり)
 作者を応援してもいいよと言う方は下記ウィッシュリストから一つ品物を選んで贈って下さると作者は激しく喜びます。<br>
-https://amzn.to/300ZLsi
+https://www.amazon.co.jp/hz/wishlist/ls/IYVIJXMHB9O0?type=wishlist&filter=unpurchased&sort=custom&viewType=list
