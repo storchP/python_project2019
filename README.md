@@ -1,22 +1,17 @@
-# project open widget 2019
+# project open widget 2019-2026
 ex mission python widget apps
-## widget_app.exeの使い方
+汎用ウィジェットを目指したopen widgetは本流をMikuMikuWidgetに変更し、MMDer向け支援アプリを目指す方向に転換しました。
+## 使い方
 Clone or download ボタンを押せばアプリ一式落ちてきます。<br>
-widget_app.pyや.ideaはオマケなので気にしなくて良いです（半ギレ）
-<br>
-distフォルダの中に入っているwidget_app.exeを単独で起動させて下さい。
-
-AEおじさん、MMDおじさん、DTMおじさん、Unityおじさん、Photoshopおじさん<br>
-etc...が必要とするであろうウェブサイトを順番にクリックするだけで巡回できるウィジェットが開きます。
+MikuMikuWidget2.6.exeを単独で起動してください。<br>
+インストール作業は不要です。
 
 ## カスタマイズ
 widget_app.pyに記述されているラベルとURLは一意ですので、ここを書き換えてカスタマイズ出来ます。
-<br>詳細は同梱のビルド時注意事項.txtをお読み下さい。
 
 ## Donation(所謂おひねり)
 作者を応援してもいいよと言う方は下記ウィッシュリストから一つ品物を選んで贈って下さると作者は激しく喜びます。<br>
-https://amzn.to/300ZLsi
-
+https://www.amazon.co.jp/hz/wishlist/ls/IYVIJXMHB9O0?type=wishlist&filter=unpurchased&sort=custom&viewType=list
 # ライセンス
 このアプリケーションはMITライセンスです。
 storchPのソースコードから派生した事をクレジットに記載して頂ければ、自由に改変し配布する事が可能です。
